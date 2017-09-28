@@ -12,7 +12,8 @@ B.Tech from Techno India NJR Institute Of Technology
 ### Projects
 
 -----
-1.FaceBook Auto Post 
+1.FaceBook Auto Post
+
 2.Mi Community Bot
 
 ### Portfolio Website

@@ -8,8 +8,8 @@ Undergraduate Middler in B.Tech. Computer Science and Engineering From Shri Mata
 Part time Competitve Coder.Currently focus on deep learning and preparing for GSOC
 
 ### Projects
--[Make a small pyhton script which calculate traffic time between two location using google api](https://github.com/RaiVaibhav/python-script)
+-[pyhton script which calculate traffic time between two location using google api](https://github.com/RaiVaibhav/python-script)
 
-###PROFILE LINK
+### PROFILE LINK
 
--[VAIBHAV RAI](https://github.com/RaiVaibhav)
+[VAIBHAV RAI](https://github.com/RaiVaibhav)

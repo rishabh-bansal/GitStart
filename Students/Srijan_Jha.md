@@ -1,10 +1,14 @@
-Srijan Jha
+# Srijan Jha
+-----------
 
-Academics
+### Academics
 
 Passed 10th STD from Loyola school Jamshedpur
 
-Development
+### Development
 
-Projects
+-----------
 
+### Projects
+
+-----------

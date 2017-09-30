@@ -5,3 +5,5 @@ Contributors add your name here :
 3. YUSUKE EDO (https://github.com/Kogumac)
 4. JIAN LIEW (https://github.com/JianLoong)
 5. OLIVER NURAL (https://github.com/OllyNural)
+6. SYED FARAAZ AHMAD (https://github.com/faraazahmad/)
+7. BURAK TOKAK (https://github.com/btk/)

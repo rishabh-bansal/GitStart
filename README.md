@@ -1,15 +1,16 @@
-# A Repository for people to make Pull Request to.
+# Welcome to GitHub!
+## This project is perfect for your first pull request 
 
 ## Instructions
 
-- Fork this Repository
+- Fork this Repository using the button at the top
 - Clone it to your PC
-- Add your profile page
+- Add your profile page in Students\
 - Commit and push
-- Create a PR
+- Create a pull request
 - Star this repository
 - Wait for Pull Request to merge
-- Celebrate ! 
+- Celebrate - you've done your first pull request!
 
 
 Read about markdown syntax here

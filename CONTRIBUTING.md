@@ -19,3 +19,5 @@ SRIJAN JHA (https://github.com/SrijanJha28)
 VAIBHAV RAI(https://github.com/RaiVaibhav)
 
 SIAN TAKK(https://github.com/zellowcactus)
+
+NISCHAL BASUTI(https://github.com/nischalbasuti)

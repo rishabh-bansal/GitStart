@@ -7,6 +7,5 @@
 
 ### Projects
 
-private projects using go, python, php
-highly interested in docker deployments
------
+
+private projects using go, python, php highly interested in docker deployments

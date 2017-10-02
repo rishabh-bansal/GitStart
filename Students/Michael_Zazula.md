@@ -1,4 +1,5 @@
-#Michael Zazula
+# Michael Zazula
 
-###Academic
+### Academic
+
 Mathematics/Computer Science Student

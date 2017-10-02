@@ -1,6 +1,9 @@
-Contributors add your name here :
+
+# Contributors (Add name)
 
 RISHABH BANSAL (https://github.com/rishabh-bansal)
+
+Filipe Ramalho (https://github.com/FilipeRamalho)
 
 KHUSHAL SHARMA (https://github.com/Logan1x)
 
@@ -19,7 +22,6 @@ SRIJAN JHA (https://github.com/SrijanJha28)
 VAIBHAV RAI(https://github.com/RaiVaibhav)
 
 SIAN TAKK(https://github.com/zellowcactus)
-
 
 NISCHAL BASUTI(https://github.com/nischalbasuti)
 

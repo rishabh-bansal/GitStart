@@ -1,6 +1,9 @@
-Contributors add your name here :
+
+# Contributors (Add name)
 
 RISHABH BANSAL (https://github.com/rishabh-bansal)
+
+Filipe Ramalho (https://github.com/FilipeRamalho)
 
 KHUSHAL SHARMA (https://github.com/Logan1x)
 

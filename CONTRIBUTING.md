@@ -29,3 +29,5 @@ MARTIJN B(https://github.com/x1mdev
 RAHUL BISNOI(https://github.com/nanspro)
 
 SHANTANU KAMATH(https://github.com/shantanukamath)
+
+SØREN ERIKSEN(https://github.com/soer7022)

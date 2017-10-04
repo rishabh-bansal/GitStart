@@ -1,6 +1,9 @@
-Contributors add your name here :
+
+# Contributors (Add name)
 
 RISHABH BANSAL (https://github.com/rishabh-bansal)
+
+Filipe Ramalho (https://github.com/FilipeRamalho)
 
 KHUSHAL SHARMA (https://github.com/Logan1x)
 
@@ -28,6 +31,8 @@ MARTIJN B(https://github.com/x1mdev
 
 RAHUL BISNOI(https://github.com/nanspro)
 
-SHANTANU KAMATH(https://github.com/shantanukamath) 
-
 MARTIN MEHL(https://github.com/mehlleniumfalke)
+
+SHANTANU KAMATH(https://github.com/shantanukamath)
+
+cl1ent (https://github.com/cl1ent)

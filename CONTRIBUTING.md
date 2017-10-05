@@ -1,8 +1,13 @@
-Contributors add your name here :
+
+# Contributors (Add name)
 
 RISHABH BANSAL (https://github.com/rishabh-bansal)
 
+Filipe Ramalho (https://github.com/FilipeRamalho)
+
 KHUSHAL SHARMA (https://github.com/Logan1x)
+
+KAMAKSHI MANSUKHANI(https://github.com/kamakshimansukhani)
 
 YUSUKE EDO (https://github.com/Kogumac)
 
@@ -28,6 +33,11 @@ MARTIJN B(https://github.com/x1mdev
 
 RAHUL BISNOI(https://github.com/nanspro)
 
+ASHISH JHA(https://github.com/thedreamsaver)
+
+MARTIN MEHL(https://github.com/mehlleniumfalke)
+
 SHANTANU KAMATH(https://github.com/shantanukamath)
 
-ASHISH JHA(https://github.com/thedreamsaver)
+cl1ent (https://github.com/cl1ent)
+

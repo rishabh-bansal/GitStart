@@ -1,12 +1,13 @@
 # Welcome to GitHub!
-## This project is perfect for your first pull request 
+## This project is perfect for your first pull request
 
 ## Instructions
 
 - Fork this Repository using the button at the top
-- Clone it to your PC
+- Clone your forked repository to your pc
+- Create a new branch for your modifications (ie. ```git branch new-user``` and check it out ```git checkout new-user```)
 - Add your profile page in Students\
-- Commit and push
+- Add your files (```git add .```), commit (```git commit -m "added myself"```) and push (```git push```)
 - Create a pull request
 - Star this repository
 - Wait for Pull Request to merge
@@ -15,4 +16,3 @@
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
- 

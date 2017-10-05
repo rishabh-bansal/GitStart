@@ -7,6 +7,8 @@ Filipe Ramalho (https://github.com/FilipeRamalho)
 
 KHUSHAL SHARMA (https://github.com/Logan1x)
 
+KAMAKSHI MANSUKHANI (https://github.com/kamakshimansukhani)
+
 YUSUKE EDO (https://github.com/Kogumac)
 
 JIAN LIEW (https://github.com/JianLoong)

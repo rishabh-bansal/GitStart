@@ -2,7 +2,7 @@
 
 ## About me:
 
-Third year IT, B.tech. student from Delhi. I love Data Structures, Algorithm Designing and Machine Learning.  
+5th semester IT, B.tech. student from Delhi. I love Data Structures, Algorithm Designing and Machine Learning.  
 I love ML because of the involvement of Mathematics. Feel free to contact me if you want any help on your projects. I am always happy to help others.
 
 

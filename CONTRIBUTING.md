@@ -7,6 +7,8 @@ Filipe Ramalho (https://github.com/FilipeRamalho)
 
 KHUSHAL SHARMA (https://github.com/Logan1x)
 
+KAMAKSHI MANSUKHANI(https://github.com/kamakshimansukhani)
+
 YUSUKE EDO (https://github.com/Kogumac)
 
 JIAN LIEW (https://github.com/JianLoong)
@@ -31,10 +33,13 @@ MARTIJN B(https://github.com/x1mdev
 
 RAHUL BISNOI(https://github.com/nanspro)
 
+MARTIN MEHL(https://github.com/mehlleniumfalke)
+
 SHANTANU KAMATH(https://github.com/shantanukamath)
 
 BRIAN HUDSON(https://github.com/hudspace)
 
 cl1ent (https://github.com/cl1ent)
+
 
 

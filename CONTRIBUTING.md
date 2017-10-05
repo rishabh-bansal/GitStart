@@ -33,4 +33,8 @@ RAHUL BISNOI(https://github.com/nanspro)
 
 SHANTANU KAMATH(https://github.com/shantanukamath)
 
+BRIAN HUDSON(https://github.com/hudspace)
+
 cl1ent (https://github.com/cl1ent)
+
+

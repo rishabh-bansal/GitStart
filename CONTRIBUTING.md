@@ -38,3 +38,5 @@ MARTIN MEHL(https://github.com/mehlleniumfalke)
 SHANTANU KAMATH(https://github.com/shantanukamath)
 
 cl1ent (https://github.com/cl1ent)
+
+Victor Gazotti (https://github.com/arkanius)

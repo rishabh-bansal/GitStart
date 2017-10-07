@@ -25,6 +25,8 @@ VAIBHAV RAI(https://github.com/RaiVaibhav)
 
 SIAN TAKK(https://github.com/zellowcactus)
 
+GABRIEL LANGER (https://github.com/gablanger)
+
 NISCHAL BASUTI(https://github.com/nischalbasuti)
 
 MUDIT SURANA(https://github.com/surana-mudit)
@@ -40,4 +42,3 @@ MARTIN MEHL(https://github.com/mehlleniumfalke)
 SHANTANU KAMATH(https://github.com/shantanukamath)
 
 cl1ent (https://github.com/cl1ent)
-

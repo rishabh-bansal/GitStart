@@ -39,5 +39,7 @@ MARTIN MEHL(https://github.com/mehlleniumfalke)
 
 SHANTANU KAMATH(https://github.com/shantanukamath)
 
-cl1ent (https://github.com/cl1ent)
 
+BRIAN HUDSON(https://github.com/hudspace)
+
+cl1ent (https://github.com/cl1ent)

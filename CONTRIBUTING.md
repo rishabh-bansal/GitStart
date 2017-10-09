@@ -41,3 +41,4 @@ SHANTANU KAMATH(https://github.com/shantanukamath)
 
 cl1ent (https://github.com/cl1ent)
 
+Henrique Duarte (https://github.com/mustorze)

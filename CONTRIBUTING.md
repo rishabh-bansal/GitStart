@@ -33,6 +33,8 @@ MARTIJN B(https://github.com/x1mdev
 
 RAHUL BISNOI(https://github.com/nanspro)
 
+ASHISH JHA(https://github.com/thedreamsaver)
+
 MARTIN MEHL(https://github.com/mehlleniumfalke)
 
 SHANTANU KAMATH(https://github.com/shantanukamath)
@@ -40,3 +42,5 @@ SHANTANU KAMATH(https://github.com/shantanukamath)
 cl1ent (https://github.com/cl1ent)
 
 Victor Gazotti (https://github.com/arkanius)
+
+SØREN ERIKSEN(https://github.com/soer7022)

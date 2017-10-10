@@ -5,7 +5,7 @@ Designer graduating in Advertising - DeVry Metrocamp, Campinas, São Paulo, Braz
 
 ## About me:
 
-I'm a designer! Check my website: www.caiocall.com
+I'm a designer! Check my website: www.caiocall.com - I also like to code!
 
 ## Languages that I know:
 

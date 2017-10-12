@@ -15,8 +15,6 @@ I would be most glad to contribute to anyone's project. Please contact me regard
 - Python
 I am also familiar with HTML.
 
-My academic background also consists of a deep understanding of Physics, having participated to many competitions. Those prepared me for the thorough studying I am and always will be doing.
+My academic background also consists of a deep understanding of Physics, having participated to many competitions. Those prepared me for the thorough studying I am and always will be doing in IT and, as a hobby, science.
 
-## Github account
-www.github.com/theodoradragan 
 

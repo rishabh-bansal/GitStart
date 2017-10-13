@@ -12,6 +12,8 @@
 - Star this repository
 - Wait for Pull Request to merge
 - Celebrate - you've done your first pull request!
+- What's next ? Do same for 3 more times probably finding other projects labelled hactoberfest.
+- Voila, Done with 4 ?(check your progress at hacktoberfest.digitalocean.com) Then just wait till end of month for a mail to arrive for instructions to recieve your free tshirt.
 
 
 Read about markdown syntax here

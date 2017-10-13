@@ -1,7 +1,7 @@
-#Hello Bear
-##About me
+# Hello Bear
+## About me
 * Game dev
 * ML
 * UI/UX
-##Something cookie
+## Something cookie
 https://github.com/enneakr

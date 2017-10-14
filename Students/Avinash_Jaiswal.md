@@ -1,16 +1,17 @@
-# Kartik Rajesh
+# Avinash Jaiswal
 ===
 
 ## About me:
 ===
 
-20 years old ,Enthusiastic,aspiring developer and Programmer interested in backend development and eventually building some complex and really cool Web applications.Help me to evolve and we can make something nice together.
+19 years old Young,Enthusiastic,Front-End developer and Programmer interested in backend development and eventually building some complex and really cool Web applications.Help me to evolve and we can make something nice together.
 
 ## Academics:
 ===
 
-Presently pursuing my B.Tech in Computer Engineering from SIES Graduate School of Technology,Mumbai.
+Presently pursuing my B.Tech in Computer Engineering from Sardar Vallabhai National Institute of Technology,Surat.
 
+Completed my Class 12th from Sunbeam School Lahartara ,Varanasi.
 
 ## Languages Known:
 ===
@@ -25,10 +26,9 @@ Presently pursuing my B.Tech in Computer Engineering from SIES Graduate School o
 ===
 
 - Twitter's Bootstrap
-- Node js
 ===
 
-# [Check out my Github page](https://github.com/kartik70rajesh)
+# [Check out my Github page](https://github.com/littlestar642)
 ===
 
-# Email @: kartik.rajesh15@siesgst.ac.in
+# Email @: avinashjaiswal642@gmail.com

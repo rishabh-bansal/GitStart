@@ -1,4 +1,4 @@
-
+﻿
 # Contributors (Add name)
 
 RISHABH BANSAL (https://github.com/rishabh-bansal)
@@ -44,3 +44,5 @@ cl1ent (https://github.com/cl1ent)
 Victor Gazotti (https://github.com/arkanius)
 
 SØREN ERIKSEN(https://github.com/soer7022)
+
+Manav Mehra (https://github.com/manavmehra96)

@@ -1,10 +1,10 @@
-#Ted Ribeiro
+# Ted Ribeiro
 
-##About Me
+## About Me
 
 Computer Engineering student at Federal University of Bahia - Brazil
 
-##Languages that I know
+## Languages that I know
 
 - C#
 - Java

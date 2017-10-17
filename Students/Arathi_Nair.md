@@ -1,4 +1,4 @@
-# Arathi Naie
+# Arathi Nair
 
 ### Academics
 

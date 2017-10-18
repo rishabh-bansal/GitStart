@@ -1,6 +1,8 @@
 
 # Contributors (Add name)
 
+KYLE PU (https://github.com/Kyle-P)
+
 RISHABH BANSAL (https://github.com/rishabh-bansal)
 
 Filipe Ramalho (https://github.com/FilipeRamalho)

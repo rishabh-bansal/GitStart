@@ -44,3 +44,8 @@ cl1ent (https://github.com/cl1ent)
 Victor Gazotti (https://github.com/arkanius)
 
 SØREN ERIKSEN(https://github.com/soer7022)
+
+#### Name: [Shehzad Shaikh](https://github.com/cyberrspiritt)
+  - Place: Pune, Maharashtra
+  - Bio: Cloud Lead @ IgluLabs
+  - Website: www.shehzadshaikh.com

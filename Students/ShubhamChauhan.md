@@ -5,18 +5,16 @@
 18 years old first year CS Engineering student from Delhi.
 
 ## Certificates:
-- Getting started with Python - UOM - Coursera
+- Getting started with python - Coursera
 
 ## Languages that I know:
 
-- HTML
-- Python
 - C++
 - C
-
-
+- Python
+- HTML
 
 
 [Check out my GitHub](https://github.com/ShubhamSinghChauhan)
 
-Email me: chauhanshubham089@gmail.com
+Email : chauhanshubham089@gmail.com

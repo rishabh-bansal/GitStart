@@ -1,5 +1,4 @@
 # Debashish Nayak
-### theindianotaku
 
 ## About me
 

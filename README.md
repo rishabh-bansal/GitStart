@@ -14,5 +14,12 @@
 - Celebrate - you've done your first pull request!!
 
 
-Read about markdown syntax here
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+Read about markdown syntax [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## Further Instructions
+
+Once you complete your first pull request and it gets merged, you can do a few new things!
+
+- go to the Issues section and check out the listed issues, if you believe you can do any of them comment that you want to contribute and start working in on your forked repo. Once complete you may create a new Pull Request and help others
+ 
+- or if you think that the repo is missing something or doing something wrong go on and add an issue so that the other contributors can help out. 

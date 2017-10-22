@@ -1,5 +1,8 @@
 
 # Contributors (Add name)
+
+KUDAKWASHE PARADZAYI (https://github.com/kudapara)
+
 RISHABH BANSAL (https://github.com/rishabh-bansal)
 
 SHUBHANGI PANDEY (https://github.com/meshubhangi)

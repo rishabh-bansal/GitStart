@@ -47,4 +47,7 @@ Victor Gazotti (https://github.com/arkanius)
 
 SØREN ERIKSEN(https://github.com/soer7022)
 
+Perdana Adhitama(https://github.com/kovloq)
+
 Anirudh Sharma(https://github.com/Anirudh5)
+

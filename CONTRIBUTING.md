@@ -1,7 +1,11 @@
 
 # Contributors (Add name)
 
+KUDAKWASHE PARADZAYI (https://github.com/kudapara)
+
 RISHABH BANSAL (https://github.com/rishabh-bansal)
+
+SHUBHANGI PANDEY (https://github.com/meshubhangi)
 
 Filipe Ramalho (https://github.com/FilipeRamalho)
 
@@ -14,6 +18,8 @@ YUSUKE EDO (https://github.com/Kogumac)
 JIAN LIEW (https://github.com/JianLoong)
 
 OLIVER NURAL (https://github.com/OllyNural)
+
+VENU VARDHAN REDDY (https://github.com/vchrombie)
 
 SYED FARAAZ AHMAD (https://github.com/faraazahmad/)
 
@@ -41,6 +47,20 @@ SHANTANU KAMATH(https://github.com/shantanukamath)
 
 cl1ent (https://github.com/cl1ent)
 
+Dragan Theodora-Augustina (https://github.com/theodoradragan)
+
+
 Victor Gazotti (https://github.com/arkanius)
 
 SØREN ERIKSEN(https://github.com/soer7022)
+
+Daksh Chaturvedi(https://github.com/daksh249)
+
+Perdana Adhitama(https://github.com/kovloq)
+
+Anirudh Sharma(https://github.com/Anirudh5)
+
+Anjali Bansal(https://github.com/bansalanjali2512)
+
+Debashish Nayak (https://github.com/theindianotaku)
+

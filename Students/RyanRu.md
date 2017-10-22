@@ -1,8 +1,8 @@
-# Aditya Danapurkar
+# Ryan Ruenroeng
 
 ## About me:
 
-17 years old and first year CS Engineering student from Pune. I love web development and aspire to become a web dev.  
+28 years old first year CS Engineering student from Pune. I love web development and aspire to become a web dev.  
 I love the web because I learnt everything from it. Feel free to contact me if you want any help on your projects. I am always happy to help others.
 
 ## Certificates:
@@ -27,6 +27,6 @@ I am also familiar with Python, C and C++.
 - MongoDB
 
 
-[Check out my GitHub](https://github.com/ad-dan)
+[Check out my GitHub](https://github.com/rruenroeng)
 
-Email me: dan.aditya.0@gmail.com
+Email me: Rruenroeng@gmail.com

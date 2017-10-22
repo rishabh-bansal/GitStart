@@ -15,6 +15,8 @@ JIAN LIEW (https://github.com/JianLoong)
 
 OLIVER NURAL (https://github.com/OllyNural)
 
+VENU VARDHAN REDDY (https://github.com/vchrombie)
+
 SYED FARAAZ AHMAD (https://github.com/faraazahmad/)
 
 BURAK TOKAK (https://github.com/btk/)

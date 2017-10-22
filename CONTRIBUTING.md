@@ -15,6 +15,8 @@ JIAN LIEW (https://github.com/JianLoong)
 
 OLIVER NURAL (https://github.com/OllyNural)
 
+VENU VARDHAN REDDY (https://github.com/vchrombie)
+
 SYED FARAAZ AHMAD (https://github.com/faraazahmad/)
 
 BURAK TOKAK (https://github.com/btk/)
@@ -46,3 +48,6 @@ Victor Gazotti (https://github.com/arkanius)
 SØREN ERIKSEN(https://github.com/soer7022)
 
 Perdana Adhitama(https://github.com/kovloq)
+
+Anirudh Sharma(https://github.com/Anirudh5)
+

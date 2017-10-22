@@ -5,9 +5,6 @@
 18 years old first year CS Engineering student from NIT Andhra. I love machine learninig and app development.  
 Feel free to contact me if you want any help on your projects. I am always happy to help others.
 
-## Certificates:
-- Frontend Developer - freeCodeCamp
-
 ## Languages that I know:
 
 - HTML

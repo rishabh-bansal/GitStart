@@ -47,6 +47,9 @@ SHANTANU KAMATH(https://github.com/shantanukamath)
 
 cl1ent (https://github.com/cl1ent)
 
+Dragan Theodora-Augustina (https://github.com/theodoradragan)
+
+
 Victor Gazotti (https://github.com/arkanius)
 
 SØREN ERIKSEN(https://github.com/soer7022)

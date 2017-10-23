@@ -49,6 +49,7 @@ cl1ent (https://github.com/cl1ent)
 
 Dragan Theodora-Augustina (https://github.com/theodoradragan)
 
+byteme (https://github.com/tejassateesh)
 
 Victor Gazotti (https://github.com/arkanius)
 
@@ -63,4 +64,3 @@ Anirudh Sharma(https://github.com/Anirudh5)
 Anjali Bansal(https://github.com/bansalanjali2512)
 
 Debashish Nayak (https://github.com/theindianotaku)
-

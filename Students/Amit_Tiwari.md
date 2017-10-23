@@ -12,3 +12,6 @@ Terraform-
 Anisble-
 GIT-
 Jenkins-
+
+Operating Systems:
+Linux, Fedora, Ubuntu, Windows

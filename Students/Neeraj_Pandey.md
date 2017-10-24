@@ -1,12 +1,12 @@
-##Neeraj Pandey
+## Neeraj Pandey
 
 *Hello World*
 
-#WhoAmI
+# WhoAmI
 
 Graduated in the year 2015 with specialization in Electronics and Communication Engineering.I am a technophile,a Machine Learning Enthusiast, an avid reader, an ardent Elon Musk fan and one who loves to travel. I also like solving puzzles/problems and coding.My technical skills include JAVA(Core and Enterprise), Oracle Database Server and Web Development.Also, I am an enrolled Data Analytics/Science Learner.
 
-#Computer Languages I am comfortable with:
+# Computer Languages I am comfortable with:
 
 - Java
 - HTML

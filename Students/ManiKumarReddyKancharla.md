@@ -36,19 +36,18 @@ Technical Experience
 --------------------
 
 Programming Languages
-:   **PHP:** 
+:   **PHP:=** 
 
-:   **Ruby, Ruby on Rails:** 
+:   **Ruby, Ruby on Rails** 
 
-:   **JavaScript:**
+:   **JavaScript**
 
-:   **Python:**
+:   **Python**
 
-:   **C:** 
+:   **C** 
 
 :   Basic knowledge of **Java**, **x86 assembly**, **C#**, **HTML/CSS**
 
-[ref]: https://github.com/githubuser/superlongprojectname
 
 More
 ----------------------------------------

@@ -3,6 +3,6 @@ My name is Pradeep Kumar. I am an Computer Science student at PSG college of Tec
 # Experience
 I am new to open source.
 # Interests
-Open source, GPU computing.
+Open source, GPU computing, Computer Architecture.
 # Contact Info
 Github: [pradeepisro](https://github.com/pradeepisro)

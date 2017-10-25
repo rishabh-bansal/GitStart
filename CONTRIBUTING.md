@@ -1,5 +1,6 @@
 
 # Contributors (Add name)
+AMRIT SRIVASTAVA (https://github.com/amritsrivastava)
 
 KUDAKWASHE PARADZAYI (https://github.com/kudapara)
 
@@ -65,4 +66,3 @@ Anjali Bansal(https://github.com/bansalanjali2512)
 Debashish Nayak (https://github.com/theindianotaku)
 
 Ansh Sachdeva (https://github.com/chaostools)
-

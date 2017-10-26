@@ -66,3 +66,4 @@ Debashish Nayak (https://github.com/theindianotaku)
 
 Ansh Sachdeva (https://github.com/chaostools)
 
+Christopher Moura (https://github.com/christophermoura)

@@ -1,4 +1,4 @@
-
+﻿
 # Contributors (Add name)
 
 KUDAKWASHE PARADZAYI (https://github.com/kudapara)
@@ -65,4 +65,6 @@ Anjali Bansal(https://github.com/bansalanjali2512)
 Debashish Nayak (https://github.com/theindianotaku)
 
 Ansh Sachdeva (https://github.com/chaostools)
+
+Supriyanta Poddar (https://github.com/supriyanta)
 

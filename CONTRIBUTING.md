@@ -1,6 +1,8 @@
 
 # Contributors (Add name)
 
+GYASIK NUNEZ (https://github.com/gyasikn)
+
 KUDAKWASHE PARADZAYI (https://github.com/kudapara)
 
 RISHABH BANSAL (https://github.com/rishabh-bansal)
@@ -65,4 +67,3 @@ Anjali Bansal(https://github.com/bansalanjali2512)
 Debashish Nayak (https://github.com/theindianotaku)
 
 Ansh Sachdeva (https://github.com/chaostools)
-

@@ -1,0 +1,2 @@
+Hello there. My name is Rijuth Menon, AKA Markis. I have always loved to program and have been doing it since 7th standard. I love web development and am experienced in HTML, CSS, JS, node.js, PHP, SQL and JAVA. I know a  few libraries as well. I love pentesting as well, since I do'nt have much time to participate in the hacktoberfest (I just got to know about it), I decided to make a pull request at easy places. I am an open source enthusiast as well, check my website at https://rijuthmenon.me 
+Thanks!

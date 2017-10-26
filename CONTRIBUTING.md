@@ -66,3 +66,5 @@ Debashish Nayak (https://github.com/theindianotaku)
 
 Ansh Sachdeva (https://github.com/chaostools)
 
+[Manish pal](https://github.com/Manish6858)
+

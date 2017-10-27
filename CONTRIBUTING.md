@@ -68,4 +68,6 @@ Ansh Sachdeva (https://github.com/chaostools)
 
 Christopher Moura (https://github.com/christophermoura)
 
-Chahat Bansal (https://github.com/chahatbansal
+Chahat Bansal (https://github.com/chahatbansa)
+
+Raymonelika (https://github.com/raymonelika)

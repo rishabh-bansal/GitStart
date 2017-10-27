@@ -17,7 +17,7 @@ YUSUKE EDO (https://github.com/Kogumac)
 
 JIAN LIEW (https://github.com/JianLoong)
 
-OLIVER NURAL (https://github.com/OllyNural)
+OLIVE NURAL (https://github.com/OllyNural)
 
 VENU VARDHAN REDDY (https://github.com/vchrombie)
 

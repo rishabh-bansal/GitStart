@@ -49,7 +49,6 @@ cl1ent (https://github.com/cl1ent)
 
 Dragan Theodora-Augustina (https://github.com/theodoradragan)
 
-
 Victor Gazotti (https://github.com/arkanius)
 
 SØREN ERIKSEN(https://github.com/soer7022)
@@ -67,3 +66,5 @@ Debashish Nayak (https://github.com/theindianotaku)
 Ansh Sachdeva (https://github.com/chaostools)
 
 Christopher Moura (https://github.com/christophermoura)
+
+Burak Hamuryen (https://github.com/hamuryen)

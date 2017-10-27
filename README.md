@@ -11,7 +11,7 @@
 - Create a pull request
 - Star this repository
 - Wait for Pull Request to merge
-- Celebrate - you've done your first pull request!!
+- Celebrate - you've done your first pull request!!!
 
 
 Read about markdown syntax here

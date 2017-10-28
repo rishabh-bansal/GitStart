@@ -16,5 +16,5 @@ Post graduate student at IIIT Hyderabad
 * EHCACHE
 * JCS
 
-[Checkout my github](https://github.com/abstatic)
+[Abhishek Shrivastava](https://github.com/abstatic)
 

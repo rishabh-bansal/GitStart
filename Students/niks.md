@@ -1,5 +1,5 @@
 # Niks Arora
 
-## [Github](https://github.com/nikhilatmaple)
+## [GitHub](https://github.com/nikhilatmaple)
 ### Web Developer
-### New Delhi, India
+#### Location: New Delhi, India

@@ -1,7 +1,7 @@
 # Sheikh Mohammad
 
 ## Whoami:
-I’m a CSE student from India. I like to code, read, write, draw and dream to travel a lot! 
+I’m a CSE student from India.
 
 
 ## Languages that I know:

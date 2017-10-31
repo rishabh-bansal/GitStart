@@ -21,6 +21,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Burak Tokak](https://github.com/btk/)
 - [Srijan Jha](https://github.com/SrijanJha28)
 - [Vaibhav Rai](https://github.com/RaiVaibhav)
+- [Dalip](https://github.com/dalip123)
 - [Sian Takk](https://github.com/zellowcactus)
 - [Nischal Basuti](https://github.com/nischalbasuti)
 - [Mudit Surana](https://github.com/surana-mudit)

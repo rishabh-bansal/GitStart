@@ -41,4 +41,3 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Ansh Sachdeva](https://github.com/chaostools)
 - [Christopher Moura](https://github.com/christophermoura)
 - [Chahat Bansal](https://github.com/chahatbansal)
-- [Pranav Ajith](https://github.com/pran4ajith)

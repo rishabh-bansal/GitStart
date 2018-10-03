@@ -27,7 +27,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Martijn B](https://github.com/x1mdev)
 - [Rahul Bisnoi](https://github.com/nanspro)
 - [Ashish Jha](https://github.com/thedreamsaver)
-- [Raj Pathare] (https://github.com/RajPathare)
+- [Raj Pathare](https://github.com/RajPathare)
 - [Martin Mehl](https://github.com/mehlleniumfalke)
 - [Shantanu Kamath](https://github.com/shantanukamath)
 - [cl1ent](https://github.com/cl1ent)

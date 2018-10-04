@@ -1,14 +1,21 @@
-## Student of Delhi Technological University.
-## B.Tech. in Mathematics and Computing.
+# Student of Delhi Technological University.
 
-Languages :
-  1.C++
-  2.Python
-  3.MATLAB
+### B.Tech. in Mathematics and Computing.
 
-Topics:
-  1.Data Structures
-  2.Object Oriented Programming
-  3.Calculus
-  4.Algebra
-  5.Number Theory
+----
+
+#### Languages :
+  
+  * C++
+  * Python
+  * MATLAB
+
+----
+
+#### Topics:
+  
+  * Data Structures
+  * Object Oriented Programming
+  * Calculus
+  * Algebra
+  * Number Theory

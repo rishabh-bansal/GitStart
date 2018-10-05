@@ -7,6 +7,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [<Name>](https://github.com/<your-username>)
 ```
 
+- [Harsh](https://github.com/hr21)
 - [Kudakwashe Paradzayi](https://github.com/kudapara)
 - [Rishabh Bansal](https://github.com/rishabh-bansal)
 - [Shubhangi Pandey](https://github.com/meshubhangi)

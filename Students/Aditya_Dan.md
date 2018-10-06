@@ -2,7 +2,7 @@
 
 ## About me:
 
-18 year old guy Pune. I love web development and aspire to become a web dev.  
+18 year old guy living in Pune. I love web development and aspire to become a web dev.  
 I love the web because I learnt everything from it. Feel free to contact me if you want any help on your projects. I am always happy to help others.
 
 ## Languages that I know:

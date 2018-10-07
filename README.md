@@ -16,3 +16,6 @@
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+New to github,Get started
+https://guides.github.com/activities/hello-world/

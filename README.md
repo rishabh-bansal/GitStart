@@ -1,7 +1,7 @@
 # Welcome to GitHub!
 ## This project is perfect for your first pull request
 
-## Instructions-
+## Getting Started
 
 - Fork this Repository using the button at the top
 - Clone your forked repository to your pc
@@ -13,6 +13,6 @@
 - Wait for Pull Request to merge
 - Celebrate - you've done your first pull request!!
 
-
+## Getting Help
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

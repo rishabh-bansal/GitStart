@@ -1,0 +1,55 @@
+auto tertata rapi
+ 
+ prefereneces -> key binding. 
+ masukan ini
+
+ {"keys": ["alt+shift+x"], "command": "reindent", "args": {"single_line": false}}
+ 
+ 
+ atur ke kanan dan ke kiri block kode
+ 
+ ctrl + ] atau ctrl+[
+ 
+ ---
+ loncat ID html
+
+ctrl + r
+
+ ====
+ 
+ loncat line
+
+ctrl + g
+
+-----
+ 
+ multi layout
+ 
+ alt+shift+1 satu layout / default
+ alt+shift+2 2 layout / vertikal
+ alt+shift+8 satu layout / horizontal
+ 
+ 
+ ---
+ duplicate
+ 
+ block target
+ 
+ alt+shift+d
+ 
+ -----
+ 
+ pindah tab
+ 
+ ctrl + page up / page down
+ 
+ 
+ -----
+ komentar
+ 
+ ctrl + / rubah komentar cepat
+ 
+ ----
+
+
+ 

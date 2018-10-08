@@ -12,6 +12,8 @@
 ```
 $ git config --global user.name "Emma Paris"
 $ git config --global user.email "eparis@atlassian.com"
+$ git remote add origin-push $(git config remote.origin.url)
+$ git fetch origin-push
 ```
 
 5. You are done . 

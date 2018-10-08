@@ -1,0 +1,24 @@
+# Gautam
+
+## About me:
+
+20 years old second year CS Engineering student from Ghaziabad. 
+
+
+## Languages that I know:
+
+- Java
+- PHP
+- MYSQL
+- Python
+- CSS
+- HTML
+- Javascript
+
+I am also familiar with  C and C++.
+
+## Frameworks and Technologies that I know:
+
+
+
+[Check out my GitHub](https://github.com/Gaut9a8m)

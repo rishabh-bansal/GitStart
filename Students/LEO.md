@@ -8,9 +8,9 @@ I work on Cyber Security majorly, with Android Devlopement being next.
 I like interacting with nice people but at the same time am a little introvert.
 
 # Languages that I know:
-  1:- Java
-  2:- C/C++
-  3:- Python
+1:- Java
+2:- C/C++
+3:- Python
 
 # [Check out my Github page](https://github.com/Leo5661)
 

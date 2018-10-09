@@ -1,8 +1,8 @@
-# Abhishek Gupta
+# Codestien
 
 ## About me:
 
-Final CSE Undergrad from HBTU, Kanpur..
+Final DGXLI
 ## Certificates:
 - Java Developer
 
@@ -12,6 +12,7 @@ Final CSE Undergrad from HBTU, Kanpur..
 - HTML
 - CSS
 - JS
+- C++
 
 I am also familiar with C.
 
@@ -21,6 +22,6 @@ I am also familiar with C.
 - jQuery
 
 
-[Check out my GitHub](https://github.com/a1b2h3i4)
+[Check out my GitHub]
 
-Email me: abhishek27111995@gmail.com
+Email me: coder@gmail.com

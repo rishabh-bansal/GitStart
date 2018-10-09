@@ -16,3 +16,6 @@
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+Try to use following standards when you write commit messages.
+https://chris.beams.io/posts/git-commit/

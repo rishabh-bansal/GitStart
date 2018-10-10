@@ -1,5 +1,5 @@
 # Nik Pavlov
 
-### ...Just stealing a cheap PR here
+### Languages I know: Java, C++, C#
 
-##### uhuru na umoja!
+### ...Just stealing a cheap PR here

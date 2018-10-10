@@ -1,4 +1,4 @@
-# bio
+# Bio
 
 ## Leticia Fatima Andretta
 Brazilian, I am 20 years old and I am a student of 1 year of information systems.

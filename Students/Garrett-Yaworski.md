@@ -5,5 +5,5 @@ Garrett Yaworski
 Full time student at DevMountain in Dallas TX
 
 #Languages:
-Javascript, React, Vue, SQL, Node, Express
+Javascript, React, Vue, SQL, Node, Express, React Native
 

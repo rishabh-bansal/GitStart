@@ -12,6 +12,7 @@
 - Star this repository
 - Wait for Pull Request to merge
 - Celebrate - you've done your first pull request!
+-For more details and step wise proceedure on how to make a pull request go to github website and explore their welcome guide
 
 
 Read about markdown syntax here

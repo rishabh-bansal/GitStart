@@ -1,0 +1,1 @@
+hello, I'm Smaranda and i'm a student in Romania at The Faculty of Economics and Business Administration.

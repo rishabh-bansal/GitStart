@@ -16,3 +16,4 @@
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+The syntax is very nice and you will surely love to read this out

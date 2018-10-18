@@ -1,6 +1,6 @@
 # Add your Git Tutorials here!
 
-##Basic Git CheatSheet
+## Basic Git CheatSheet
 
 #### Git basic workflow
 * git init

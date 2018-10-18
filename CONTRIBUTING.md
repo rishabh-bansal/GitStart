@@ -33,6 +33,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Dragan Theodora-augustina](https://github.com/theodoradragan)
 - [Victor Gazotti](https://github.com/arkanius)
 - [Søren Eriksen](https://github.com/soer7022)
+- [Mayank Singh Rajkumar](https://github.com/canter-nawab)
 - [Daksh Chaturvedi](https://github.com/daksh249)
 - [Perdana Adhitama](https://github.com/kovloq)
 - [Anirudh Sharma](https://github.com/Anirudh5)

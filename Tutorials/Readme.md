@@ -70,7 +70,7 @@
 
 
 ---
-####Extra Info
+#### Extra Info
 
 * git reset --hard SHA : This takes your local repo back to SHA commit.
 	- Now if git push to remote doesnt work use: git push -f origin master. This basically rewrites github commit history

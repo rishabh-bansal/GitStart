@@ -1,6 +1,7 @@
 # Priyanshu Barnwal
  ## Whoami:
-Hi everyone !! Im priyanshu aka kabir( i work under this alias when it comes to coding stuffs.) 
+Hi everyone !! Im priyanshu aka kabir( i work under this alias when it comes to coding stuffs.) I am a machine learning enthusiast
+and right now im exploring the field of open source contribution !!
  ## Languages that I know:
  - HTML
 - Dart

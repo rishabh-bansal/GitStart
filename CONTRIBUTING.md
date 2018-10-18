@@ -14,6 +14,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Khushal Sharma](https://github.com/Logan1x)
 - [Kamakshi Mansukhani](https://github.com/kamakshimansukhani)
 - [Yusuke Edo](https://github.com/Kogumac)
+- [Bharath Nair](https://github.com/bnair2001)
 - [Jian Liew](https://github.com/JianLoong)
 - [Oliver Nural](https://github.com/OllyNural)
 - [Venu Vardhan Reddy](https://github.com/vchrombie)

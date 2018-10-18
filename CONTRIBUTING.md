@@ -11,6 +11,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Rishabh Bansal](https://github.com/rishabh-bansal)
 - [Shubhangi Pandey](https://github.com/meshubhangi)
 - [Filipe Ramalho](https://github.com/FilipeRamalho)
+- [Shoaib Siddiqi](https://github.com/ShoaibSiddiqi)
 - [Khushal Sharma](https://github.com/Logan1x)
 - [Kamakshi Mansukhani](https://github.com/kamakshimansukhani)
 - [Yusuke Edo](https://github.com/Kogumac)

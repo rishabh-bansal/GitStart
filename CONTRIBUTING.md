@@ -22,6 +22,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Srijan Jha](https://github.com/SrijanJha28)
 - [Vaibhav Rai](https://github.com/RaiVaibhav)
 - [Sian Takk](https://github.com/zellowcactus)
+- [Anish Badri R S](https://github.com/anishbadhri)
 - [Nischal Basuti](https://github.com/nischalbasuti)
 - [Mudit Surana](https://github.com/surana-mudit)
 - [Martijn B](https://github.com/x1mdev)

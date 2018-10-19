@@ -10,7 +10,7 @@ I'm a 27 years old Web Developer from Brazil. I came from a degree in Chemistry,
 - CSS
 - JS
 - Python
-
+- C++
 
 ## Frameworks and Technologies that I know:
 

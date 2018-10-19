@@ -5,6 +5,7 @@ I've studied finance in college and spent 13 years in healthcare. I realized tha
 
 After graduation I moved into some remote WordPress work to finance my travels until I find a city I'd like to settle down in. I hope to find something soon and work with JS or React. In my downtime I've been taking various udemy courses to check out some unfamiliar areas. AWS certification has become very interesting to me.
 
+
 ## Languages that I know:
 
 - HTML / ES6

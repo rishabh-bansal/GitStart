@@ -10,7 +10,6 @@
 - Javascript
 
 
-
 ## Frameworks and Technologies that I know:
 
 - Bootstrap

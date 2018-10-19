@@ -1,4 +1,4 @@
-# Trescara - Shaun Carter
+#  Trescara - Shaun Carter
 
 ## Whoami:
 I've studied finance in college and spent 13 years in healthcare. I realized that both weren't for me, so I decided to check out the Galvanize web-development program.

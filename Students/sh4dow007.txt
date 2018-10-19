@@ -1,0 +1,41 @@
+
+
+www.github.com/sh4dow007	 
+	 
+
+
+Experience
+1ST MAY – 2ND JUNE 2017
+Product Development Intern / PocketLab LLP, Bangalore
+Gained experience working for an organization and learnt the working of social media websites while developing a product “SHOWWCASE.COM” for PocketLab LLP, Bangalore
+1ST AUG 2018 – ONGOING
+Web Development Intern / Angika Technologies, Bangalore
+Working as an intern under projects on web development, implementing my knowledge of HTML, CSS and JavaScript.
+Projects
+Travel Management System / C#, .Net Framework & MsSQL
+Windows clickonce application made using Visual Studio that could be installed on any windows based system. Used to manage tours by booking Flights, Hotels and even Buses all on the same platform.
+Real-time Earthquake Visualizer / Java  
+A real-time visualizer that collects live data from USGS, and maps it using UnfoldingMaps library.
+Hotel Automation System / Java Applet
+Menu driven application program based on java having various activities for managing all of hotel needs.
+Skills
+•	Advanced programming skills in Java, Python, C#, C, 
+and C++
+•	Website development through HTML, CSS & JavaScript
+•	App development through visual studio	•	DBMS handling through Oracle SQL and Ms SQL
+•	Web content management
+•	Strong collaborative skills
+•	Excellent problem solving skills
+Achievements
+•	Indian Engineering Olympiad(2018) - AIR 233
+•	AMCAT Score - 99.5 in Computer Programming
+•	12th ICSE boards - 97 in Computer Science
+
+
+Activities
+•	Quick learner- Made an application based project on Travel Management System using C# and Microsoft SQL server.
+•	Leadership qualities- was head of students and leader of our house at school level.
+•	Good public speaking skills- have won several debates, elocution and extempore.
+•	Team building- lead my team as well as my club to winning various competitions.
+•	Sports enthusiast- have won various football, and cricket tournaments at school level.
+

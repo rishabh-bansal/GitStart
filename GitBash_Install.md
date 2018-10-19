@@ -1,5 +1,5 @@
 # Install Git on Windows
-
+Follow these five simple steps and install Git on Windows in no-time:
 
 1.Download the latest Git for Windows installer.(https://git-for-windows.github.io/)
 

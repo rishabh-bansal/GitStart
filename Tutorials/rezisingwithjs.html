@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  #po{
+
+    height: 500px;
+    width: 500px;
+  }
+  
+  </style>
+ 
+  
+
+  <script>
+
+    var i = 10;
+    
+  setInterval(lol,10);
+
+  function lol(){
+    //var i = 0;
+    i++;
+    if(i < 120){
+
+      var doc = document.getElementById("p1");
+      doc.innerHTML = i+"px";
+      doc.style.fontSize= i+"px";
+      doc.style.color = "#f"+i;//rgb(i, i, 255);
+     // doc.style.color = "rgb("+i+",100," +10+")";
+      }
+   
+  else{
+
+    var doc = document.getElementById("p1");
+      doc.innerHTML = "hacktoberfest_is_awesome";
+      doc.style.fontSize= 240-i+"px";
+      var p = 240-i;
+      doc.style.color = "#f"+p;//rgb(i, i, 255);
+      
+      if(i==241){
+
+        i=0;
+      }
+      
+      }
+
+
+
+  }
+ // setInterval(lol,500);
+
+  
+  </script>
+
+
+</head>
+<body>
+  <div id="po">
+
+      <p id="p1"></p>
+
+  </div>
+
+<input type="button" value="stop" onclick="clearInterval(myyyy)">
+
+
+</body>
+</html>

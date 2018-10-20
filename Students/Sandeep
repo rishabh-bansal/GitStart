@@ -1,3 +1,13 @@
-First Pull Request
-for hacktoberfest
-The LNM Institute of Information Technology
+add my First Pull Request for hacktoberfest with the help of following code
+ ``` git init ```
+ ``` git clone ssh://user@domain.com/repo.git ```
+ ``` git branch sandeep ```
+ ``` git checkout -b sandeep ```
+ creat my profile page then
+ ``` git add . ```
+ ``` git commit -m 'commit my first change' ```
+ ``` git push origin master ```
+ 
+ 
+with love from The LNM Institute of Information Technology
+

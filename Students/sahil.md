@@ -7,3 +7,5 @@ profile link: https://github.com/vagita24
 PHP,HTML,CSS
 python
 C++
+
+contributing to open source

@@ -1,0 +1,2 @@
+I am a high school student learning Java looking for a computer science or software development internship.
+My Profile: https://github.com/Kyle-P

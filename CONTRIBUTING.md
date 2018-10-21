@@ -19,6 +19,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Venu Vardhan Reddy](https://github.com/vchrombie)
 - [Syed Faraaz Ahmad](https://github.com/faraazahmad/)
 - [Burak Tokak](https://github.com/btk/)
+- [Abdulsalam idayat](https://github.com/abdulsalam13)
 - [Srijan Jha](https://github.com/SrijanJha28)
 - [Vaibhav Rai](https://github.com/RaiVaibhav)
 - [Sian Takk](https://github.com/zellowcactus)

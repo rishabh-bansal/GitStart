@@ -2,7 +2,7 @@ Aayush Babbar
 
 About me:
 
-16 years old School Student From Chandigarh. I love web development and aspire to become a web dev.
+I am 16 years old School Student From Chandigarh. I love web development and aspire to become a web developer.
 I love the web because I learnt everything from it. Feel free to contact me if you want any help on your projects. I am always happy to help others.
 
 Certificates:
@@ -24,6 +24,7 @@ Node.js
 Express
 Mongoose
 MongoDB
+
 Check out my GitHub
 
 Email me: aayushbabbar@gmail.com

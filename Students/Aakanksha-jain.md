@@ -12,8 +12,6 @@ I like interacting with nice people but at the same time am a little introvert. 
 
 That’s enough for here! I’m like recursion, to understand me, you need to understand me! 
 
-
-
 ## Languages that I know:
 
 - HTML
@@ -23,15 +21,13 @@ That’s enough for here! I’m like recursion, to understand me, you need to un
 - Php
 - Javascript
 
-
-
 ## Frameworks and Technologies that I know:
 
 - Bootstrap
 - Android SDK
 - Django
 
-
 [Check out my GitHub](https://github.com/accakks)
 
 Email me: aakanksha.jain8@gmail.com
+Email me: punsithrandunu2003@gmail.com

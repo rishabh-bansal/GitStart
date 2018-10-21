@@ -16,5 +16,4 @@
 - MySQL
 - Ruby on Rails
 
-
 [Check out my GitHub](https://github.com/park53kr)

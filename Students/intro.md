@@ -14,6 +14,9 @@ Hello, my name is Idácio, i'm a mozambican young student, actually i'm TI unive
 - Bootstrap
 - jQuery
 
+##DataBase
+-MySql
+
 
 [Check out my GitHub](https://github.com/idacioDad)
 

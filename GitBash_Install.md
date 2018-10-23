@@ -15,3 +15,14 @@ $ git config --global user.email "eparis@atlassian.com"
 ```
 
 5. You are done . 
+
+# Install git on Ubuntu
+1. open a terminal (see [starting a Terminal](https://help.ubuntu.com/community/UsingTheTerminal#Starting_a_terminal))
+2. install git: `$ sudo apt-get install git`
+
+3. Run the following commands to configure your Git username and email using the following commands, replacing Emma's name with your own. These details will be associated with any commits that you create:
+
+```
+$ git config --global user.name "Emma Paris"
+$ git config --global user.email "eparis@atlassian.com"
+```

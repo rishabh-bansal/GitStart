@@ -16,3 +16,6 @@
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+For aasy Video tutorial refer to:
+https://www.youtube.com/watch?v=YTbRzhQju4c

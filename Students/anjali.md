@@ -10,7 +10,7 @@ Presently pursuing MCA, University of Delhi
 
 ### Interests
 
-- Learning new stuff
+- Learning new stuff and movies
 
 ### Profile Link
 

@@ -40,4 +40,5 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Debashish Nayak](https://github.com/theindianotaku)
 - [Ansh Sachdeva](https://github.com/chaostools)
 - [Christopher Moura](https://github.com/christophermoura)
+- [@fanbyprinciple](https://github.com/fanbyprinciple))
 - [Chahat Bansal](https://github.com/chahatbansal)

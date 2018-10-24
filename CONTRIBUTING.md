@@ -32,6 +32,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [cl1ent](https://github.com/cl1ent)
 - [Dragan Theodora-augustina](https://github.com/theodoradragan)
 - [Victor Gazotti](https://github.com/arkanius)
+- [Excorcist](https://github.com/excorcist)
 - [Søren Eriksen](https://github.com/soer7022)
 - [Daksh Chaturvedi](https://github.com/daksh249)
 - [Perdana Adhitama](https://github.com/kovloq)

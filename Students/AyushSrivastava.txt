@@ -1,0 +1,5 @@
+Name:Ayush Srivastava
+Role:Student
+Intrested in: AppDev and Machine Learning
+Proficient in:JAVA and Frontend of AppDev
+Projects:Valid submission in Microsoft's Code.fun.do

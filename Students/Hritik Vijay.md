@@ -1,14 +1,14 @@
 # Hritik Vijay
 
 Proefficient in:    
-o C
-o Python
-o JS / NodeJS
-o PHP
-o Dialogflow
+- C
+- Python
+- JS/NodeJS
+- PHP
+- Dialogflow
 
+-------
+ An open source enthusiast
 
-- An open source enthusiast
-
-- [<Hritik Vijay>](https://github.com/Hritik14)
+[<Hritik Vijay>](https://github.com/Hritik14)
 

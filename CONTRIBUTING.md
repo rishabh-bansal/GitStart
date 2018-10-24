@@ -29,6 +29,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Ashish Jha](https://github.com/thedreamsaver)
 - [Martin Mehl](https://github.com/mehlleniumfalke)
 - [Shantanu Kamath](https://github.com/shantanukamath)
+- [Mancee](https://github.com/mancee)
 - [cl1ent](https://github.com/cl1ent)
 - [Dragan Theodora-augustina](https://github.com/theodoradragan)
 - [Victor Gazotti](https://github.com/arkanius)

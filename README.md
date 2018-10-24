@@ -13,6 +13,13 @@
 - Wait for Pull Request to merge
 - Celebrate - you've done your first pull request!!
 
+-some commands to remember     
+git branch    
+git pull origin dev  
+git add .   
+git commit -m "first change"  
+git push origin dev  
+
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

@@ -35,6 +35,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Søren Eriksen](https://github.com/soer7022)
 - [Daksh Chaturvedi](https://github.com/daksh249)
 - [Perdana Adhitama](https://github.com/kovloq)
+- [Mudassar Nazeer](https://github.com/MudassarNazeer1)
 - [Anirudh Sharma](https://github.com/Anirudh5)
 - [Anjali Bansal](https://github.com/bansalanjali2512)
 - [Debashish Nayak](https://github.com/theindianotaku)

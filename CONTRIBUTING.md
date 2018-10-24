@@ -26,6 +26,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Mudit Surana](https://github.com/surana-mudit)
 - [Martijn B](https://github.com/x1mdev)
 - [Rahul Bisnoi](https://github.com/nanspro)
+- [Vrashi Shrivastava](https://github.com/vrashi)
 - [Ashish Jha](https://github.com/thedreamsaver)
 - [Martin Mehl](https://github.com/mehlleniumfalke)
 - [Shantanu Kamath](https://github.com/shantanukamath)

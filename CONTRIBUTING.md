@@ -1,4 +1,4 @@
-
+﻿
 # Contributors
 
 After [adding your own page in the **Students** page](https://github.com/rishabh-bansal/Make-a-Pull-Request/issues/1), include your name and link for your Github profile at the end of the list, using the format below (remember to replace `<Name>` and `<your-username>` with your full name and github username, respectively):
@@ -41,3 +41,4 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Ansh Sachdeva](https://github.com/chaostools)
 - [Christopher Moura](https://github.com/christophermoura)
 - [Chahat Bansal](https://github.com/chahatbansal)
+- [Muhammad Rehan](https://github.com/Muhammad-Rehan1)

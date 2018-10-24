@@ -8,7 +8,6 @@
 - C++
 - C
 - Python
-- JavaScript
 - PowerShell
 - AutoIT
 

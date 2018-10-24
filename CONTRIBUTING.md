@@ -39,5 +39,6 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Anjali Bansal](https://github.com/bansalanjali2512)
 - [Debashish Nayak](https://github.com/theindianotaku)
 - [Ansh Sachdeva](https://github.com/chaostools)
+- [Carlos Hernandez](https://github.com/carlosrnatohr)
 - [Christopher Moura](https://github.com/christophermoura)
 - [Chahat Bansal](https://github.com/chahatbansal)

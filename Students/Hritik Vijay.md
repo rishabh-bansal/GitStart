@@ -10,5 +10,5 @@ Proefficient in:
 -------
  An open source enthusiast
 
-[<Hritik Vijay>](https://github.com/Hritik14)
+[Hritik Vijay](https://github.com/Hritik14)
 

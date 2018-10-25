@@ -13,4 +13,4 @@ Age: 21
 - C++
 - HTML
 
-- [GitHub](https://github.com/HigorSnt)
+## [GitHub](https://github.com/HigorSnt)

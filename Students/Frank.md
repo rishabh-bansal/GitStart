@@ -1,0 +1,1 @@
+My name is Frank and I am a QA Automation Engineer. I have a background in Front-End development, focusing on JavaScript.

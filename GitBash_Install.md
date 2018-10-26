@@ -1,5 +1,5 @@
 # Install Git on Windows
-
+----------------------------------------------------------
 
 1.Download the latest Git for Windows installer.(https://git-for-windows.github.io/)
 
@@ -15,3 +15,4 @@ $ git config --global user.email "eparis@atlassian.com"
 ```
 
 5. You are done . 
+--------------------------------------------------------------

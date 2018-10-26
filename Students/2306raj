@@ -1,0 +1,8 @@
+hacktoberfest task completion
+.
+.
+2306raj.
+to turn your laptop into hotspot
+open cmd as administrator
+type netsh wlan start hostednetwork
+for stopping replace start by stop

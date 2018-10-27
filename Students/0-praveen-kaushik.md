@@ -1,0 +1,42 @@
+# PRAVEEN KAUSHIK
+
+**_Veni Vidi Vici_**
+
+Hey All,
+This is my First Pull Request
+
+## Whoami:
+
+I’m a professional Software Developer from India. I like to Code, Eat, Sleep & Repeat. 
+
+I work on web development mostly. Blockchain & Artificial intelligence fascinates me and I hope to work on the same in future.
+
+[You can view my portfolio here.](https://kaushikpraveen.github.io "Praveen's portfolio")
+ 
+
+
+## Languages that I know:
+
+- Java
+- HTML5 & CSS3
+- C/C++
+- Php
+- Javascript
+- Typescript
+- etc.
+
+
+## Frameworks and Technologies that I know:
+
+- Angular
+- Angular JS
+- Bootstrap
+- Android SDK
+- etc.
+
+
+[Check out my GitHub](https://github.com/kaushikpraveen/)
+
+
+# **_Carpe Diem!_**
+

@@ -16,6 +16,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Yusuke Edo](https://github.com/Kogumac)
 - [Jian Liew](https://github.com/JianLoong)
 - [Oliver Nural](https://github.com/OllyNural)
+- [Ankit Shaw](https://github.com/Ankit625)
 - [Venu Vardhan Reddy](https://github.com/vchrombie)
 - [Syed Faraaz Ahmad](https://github.com/faraazahmad/)
 - [Burak Tokak](https://github.com/btk/)

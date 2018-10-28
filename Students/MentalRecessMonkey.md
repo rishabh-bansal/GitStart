@@ -1,4 +1,4 @@
-# Aakanksha Jain
+# Akash Ravidra
 
 ## Ahoa:
 I’m a Mechatronics major undergraduate student currently residing in Bangalore, India. I like to code, write, draw and dream to travel a lot! 

@@ -16,6 +16,7 @@ That’s enough for here! I’m like recursion, to understand me, you need to un
 - HTML
 - CSS
 - C/C++
+- urdu
 - Php
 - Javascript
 

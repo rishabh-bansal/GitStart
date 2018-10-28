@@ -1,0 +1,17 @@
+# Sharad Mishra
+
+## About me:
+
+5th semester CSE, B.tech. student from Kanpur. I love Data Structures, Algorithm Designing and Machine Learning.  
+I love database management systems. I am always happy to help others.
+
+
+## Languages that I know:
+
+- C
+- C++
+- Python
+
+I am also familiar with HTML, CSS and Java Script.
+
+I have done one reaesrch project on Data Mining using Clustering techniques.

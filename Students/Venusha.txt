@@ -1,0 +1,14 @@
+## About me:
+
+My nickname is Pataa. It means my university card.  
+
+## Languages that I know:
+- c
+- JavaScript
+- Java
+- HTML/CSS
+
+## Frameworks and Technologies that I know:
+
+- .Net
+- Sql

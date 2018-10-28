@@ -28,6 +28,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Rahul Bisnoi](https://github.com/nanspro)
 - [Ashish Jha](https://github.com/thedreamsaver)
 - [Martin Mehl](https://github.com/mehlleniumfalke)
+- [sanmay8005](https://github.com/sanmay8005)
 - [Shantanu Kamath](https://github.com/shantanukamath)
 - [cl1ent](https://github.com/cl1ent)
 - [Dragan Theodora-augustina](https://github.com/theodoradragan)

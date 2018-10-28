@@ -30,6 +30,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Martin Mehl](https://github.com/mehlleniumfalke)
 - [Shantanu Kamath](https://github.com/shantanukamath)
 - [cl1ent](https://github.com/cl1ent)
+- [Drew Vlasnik](https://github.com/drewvlaz)
 - [Dragan Theodora-augustina](https://github.com/theodoradragan)
 - [Victor Gazotti](https://github.com/arkanius)
 - [Søren Eriksen](https://github.com/soer7022)

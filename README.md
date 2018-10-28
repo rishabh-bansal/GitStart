@@ -9,8 +9,8 @@
 - Add your profile page in Students\
 - Add your files (```git add -A```), commit (```git commit -m "added myself"```) and push (```git push origin new-user```)
 - Create a pull request
-- Star this repository
-- Wait for Pull Request to merge
+- Star this repository.
+- Wait for Pull Request to merge.
 - Celebrate - you've done your first pull request!!
 
 

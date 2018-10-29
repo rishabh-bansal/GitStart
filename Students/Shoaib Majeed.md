@@ -1,10 +1,6 @@
 # Muhammad Shoaib Majeed
 
 
-
-## Certificates:
-- Phthon - Coursera
-
 ## Languages that I know:
 - Python
 - Java

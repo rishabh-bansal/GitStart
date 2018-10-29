@@ -1,8 +1,14 @@
-#About Me
-My name is Chetan.I'm a final year computer science student at RNSIT,Bangalore.
+# Chetan Banavikalmutt
 
-#interests
-Competitive programming,open source,web development
+### Academics
 
-#github
-[chetan-rns](https://github.com/chetan-rns)
+B.Tech in Computer Science
+
+### Skills
+
+Experience in C, C++, Java, Python, HTML, CSS & JavaScript
+
+
+### Projects
+
+Check out my github at: https://github.com/chetan-rns

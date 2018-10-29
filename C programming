@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+printf("This is the basic programming syntax for C!\n");
+return 0;
+}

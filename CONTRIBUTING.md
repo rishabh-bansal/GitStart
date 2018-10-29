@@ -8,7 +8,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 ```
 
 - [Kudakwashe Paradzayi](https://github.com/kudapara)
-- [Krichkorn Oparad](https://github.com/bachkukkik/)
+- [Krichkorn Oparad](https://github.com/bachkukkik)
 - [Rishabh Bansal](https://github.com/rishabh-bansal)
 - [Shubhangi Pandey](https://github.com/meshubhangi)
 - [Filipe Ramalho](https://github.com/FilipeRamalho)

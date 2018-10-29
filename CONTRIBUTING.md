@@ -10,6 +10,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Kudakwashe Paradzayi](https://github.com/kudapara)
 - [Rishabh Bansal](https://github.com/rishabh-bansal)
 - [Shubhangi Pandey](https://github.com/meshubhangi)
+- [Ankit Kumar Maurya](https://github.com/mauryaankitsh)
 - [Filipe Ramalho](https://github.com/FilipeRamalho)
 - [Khushal Sharma](https://github.com/Logan1x)
 - [Kamakshi Mansukhani](https://github.com/kamakshimansukhani)

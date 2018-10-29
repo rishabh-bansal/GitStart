@@ -1,5 +1,5 @@
-#Sam's Profile
-##Hello World
+# Sam's Profile
+## Hello World
 
 Thank you for providing this repo, so I can:
 ..* Learn pull requests

@@ -19,4 +19,4 @@ Hey there!
 - Bootstrap
 - jQuery
 
-[Check out my GitHub](https://github.com/kaerit)
+[Check out my GitHub](https://github.com/Harris-Iqbal)

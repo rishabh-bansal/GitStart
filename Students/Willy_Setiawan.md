@@ -1,5 +1,5 @@
 # Willy Setiawan
 
-## loves beautiful codes , and also cats!
+loves beautiful codes , and also cats!
 
 willek.github.io

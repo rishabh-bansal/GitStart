@@ -14,9 +14,6 @@ Thats enough for here! Im like recursion, to understand me, you need to understa
 - C/C++
 - Php
 - Javascript
-- React Js
-- Node Js
-
 
 
 ## Frameworks and Technologies that I know:

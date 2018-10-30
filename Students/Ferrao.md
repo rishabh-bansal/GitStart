@@ -1,4 +1,4 @@
-# Akshit Mittal
+# Arthur Ferrão
 
 ## About me:
 

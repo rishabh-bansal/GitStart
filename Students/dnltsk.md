@@ -1,3 +1,3 @@
-# dnltsk
+# Daniel Teske
 
-Hacktoberfest
+[Daniel Teske](https://www.github.com/dnltsk)

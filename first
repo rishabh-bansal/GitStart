@@ -1,1 +1,10 @@
 fist pulll request
+#
+Collaborating with issues and pull requests / Creating a pull request
+Creating a pull request
+
+Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work.
+
+Pull requests can only be opened if there are differences between your branch and the upstream branch. You can specify which branch you'd like to merge your changes into when you create your pull request.
+
+If you don't have write access to the repository where you'd like to create a pull request, you must create a fork, or copy, of the repository first. For more information, see "Creating a pull request from a fork" and "About forks."

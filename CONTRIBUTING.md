@@ -13,6 +13,7 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Filipe Ramalho](https://github.com/FilipeRamalho)
 - [Khushal Sharma](https://github.com/Logan1x)
 - [Kamakshi Mansukhani](https://github.com/kamakshimansukhani)
+- [Shubhangi Gupta](https://github.com/Shubhangi0304)
 - [Yusuke Edo](https://github.com/Kogumac)
 - [Jian Liew](https://github.com/JianLoong)
 - [Oliver Nural](https://github.com/OllyNural)

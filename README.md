@@ -1,7 +1,7 @@
 # Welcome to GitHub!
-## This project is perfect for your first pull request
+### This project is perfect for your first pull request
 
-## Instructions-
+### Instructions-
 
 - Fork this Repository using the button at the top
 - Clone your forked repository to your pc

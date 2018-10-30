@@ -1,3 +1,6 @@
+
+[Check out my GitHub](https://github.com/shahdivyam)
+
 Divyam Shah
    
    ### Website

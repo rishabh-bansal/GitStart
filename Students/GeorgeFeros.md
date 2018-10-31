@@ -3,7 +3,7 @@
 My name is George, I´m 22 years old.
 I'm like coding and making games
 I live in South Afica
-I´m study software engereering at WeThinkCode_.
+I study software engereering at WeThinkCode_.
 
 ### **Programming Languages that I am familiar with:**
 

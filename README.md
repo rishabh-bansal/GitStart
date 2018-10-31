@@ -1,4 +1,4 @@
-# Welcome to GitHub!
+# Welcome to GitHub! :globe_with_meridians:
 ## This project is perfect for your first pull request
 
 ## Instructions-

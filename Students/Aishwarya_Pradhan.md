@@ -29,4 +29,4 @@ My name is Aishwarya Pradhan and I live proudly in India. I am a Learner, Coder,
 [Check out my GitHub](https://github.com/aishwaryapradhan)
 [Check out my Website for non - technical stuff](http://introvertedgeek.com)
 
-Email me: aishwaryapradhan82[at]gmail[dot]com
+Email me: aishwaryapradhan82@gmail.com

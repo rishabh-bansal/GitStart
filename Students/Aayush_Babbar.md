@@ -18,7 +18,7 @@ I am also familiar with Python, C and C++.
 Frameworks and Technologies that I know:
 
 Bootstrap
-jQuery
+jQuery  
 React
 Node.js
 Express

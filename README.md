@@ -13,6 +13,8 @@
 - Wait for Pull Request to merge
 - Celebrate - you've done your first pull request!!
 
+## Translations
+* [Spanish](./Locale/spanish-readme.md)
 
 Read about markdown syntax here
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

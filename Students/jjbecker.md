@@ -10,6 +10,7 @@ My name is John and I graduated from UW - Madison with degrees in computer engin
 - Ruby
 - Kotlin
 - C
+- Golang
 
 ## Frameworks and Technologies that I know:
 

@@ -15,13 +15,6 @@ I am 22 year old student just completed my undergraduate level on Computer Scien
 - Java
 
 
-
-## Frameworks and Technologies that I know:
-
-- Bootstrap
-
-
-
 [Check out my GitHub](https://github.com/shubhamghimire)
 
-Email me: shubhamghimire1996@gmail.com
+Email: shubhamghimire1996@gmail.com

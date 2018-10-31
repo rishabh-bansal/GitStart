@@ -1,0 +1,19 @@
+Method Overloading
+class Overloading{
+     public void show(int age){
+     System.out.println(age);
+    }
+     public String show(String name){
+     return(name);
+    }
+     public String show(String name,int age){
+     return(name);
+ 
+    }
+     public static void main(String[] args){
+     Overloading e=new Overloading();
+ e.show(19);
+ System.out.println(e.show(Adi));
+ System.out.println(e.show(Adi,19));
+ }
+ }

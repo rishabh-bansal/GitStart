@@ -1,7 +1,7 @@
 # Shubham Ghimire
 
 ## Whoami:
-I am 22 year old student just completed my undergraduate level on Computer Science and Information Technology. I currently work for Open Knowledge Nepal.
+I am 22 year old student just completed my undergraduate level on Computer Science and Information Technology. I currently work for Open Knowledge Nepal. I am an Open Data enthusiast and Open Knowledge Activist.
 
 
 

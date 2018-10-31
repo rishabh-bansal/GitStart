@@ -11,4 +11,4 @@ My name is Julie Martin and I'm from Montreal, Quebec, Canada.
 
 ## GitHub profile:
 
-https://github.com/juliebugmtl
+[https://github.com/juliebugmtl](https://github.com/juliebugmtl)

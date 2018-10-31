@@ -42,3 +42,5 @@ After [adding your own page in the **Students** page](https://github.com/rishabh
 - [Christopher Moura](https://github.com/christophermoura)
 - [Chahat Bansal](https://github.com/chahatbansal)
 - [Johan](https://github.com/joaramirezra)
+- [Prashant](https://github.com/gutsytechster)
+

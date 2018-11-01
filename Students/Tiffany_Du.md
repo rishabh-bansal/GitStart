@@ -12,4 +12,4 @@ I'm a web designer currently working on improving my coding skills in an effort 
 - PHP
 - MySQL
 
-[Follow Me on GitHub!](https://github.com/tiffanyadu/)
+[Follow me on GitHub!](https://github.com/tiffanyadu/) or [check out my website](https://tiffanydu.com)

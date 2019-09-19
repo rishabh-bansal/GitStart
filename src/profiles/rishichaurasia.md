@@ -1,4 +1,4 @@
 ---
-user: rishichaurasia
-fillname: Rishi Chaurasia
+username: rishichaurasia
+fullname: Rishi Chaurasia
 ---

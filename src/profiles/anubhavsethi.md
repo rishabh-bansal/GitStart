@@ -1,4 +1,4 @@
 ---
-username:anubhav.apk
+username: anubhav.apk
 fullname: Anubhav Sethi
 ---

@@ -2,8 +2,5 @@
 
 # Hello Developers :wave:
 ## Let's help you submit your first Pull Request!
-
+##done
 Follow the instructions [here](https://gitstart.tech) to get started. 
-
-Hello Developer
-abcd

@@ -3,4 +3,10 @@
 # Hello Developers :wave:
 ## Let's help you submit your first Pull Request!
 
+### CryptoSingh
+- Location: New Delhi, India
+- Bio: Student
+- Github: https://github.com/CryptoSingh1337
+***
+
 Follow the instructions [here](https://gitstart.tech) to get started. 

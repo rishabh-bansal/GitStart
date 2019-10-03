@@ -14,6 +14,7 @@ My name is John and I graduated from UW - Madison with degrees in computer engin
 
 ## Frameworks and Technologies that I know:
 
+- Micronaut
 - Ratpack
 - Rails
 

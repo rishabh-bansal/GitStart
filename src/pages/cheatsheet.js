@@ -36,6 +36,10 @@ const CheatSheet = () => (
       <Code code="$ git log"/>
     </p>
     <p>
+      Show all commits with formatting and graphs
+      <Code code="$ git log --pretty --graph"/>
+    </p>
+    <p>
       Who changed what and when in a file
       <Code code="$ git blame <file>"/>
     </p>

@@ -1,4 +1,4 @@
 ---
-username: ABHINAV_SHARMA_24
+username: AbhinavSharma24
 fullname: ABHINAV_SHARMA
 ---

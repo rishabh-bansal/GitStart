@@ -1,4 +1,4 @@
 ---
 NamanKhurana: NamanKhurana
-Naman Khurana: Naman Khurana
+Naman Khurana: NAMAN KHURANA
 ---

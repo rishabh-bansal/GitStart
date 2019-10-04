@@ -1,4 +1,4 @@
 ---
-username: slagrave
+username: SLaGrave
 fullname: Sam LaGrave
 ---

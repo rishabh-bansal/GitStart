@@ -1,4 +1,4 @@
 ---
 username: HegarGarcia
-fullname: Hegar José García Rodríguez
+fullname: Hegar Jose Garcia Rodriguez
 ---

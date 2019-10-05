@@ -1,4 +1,4 @@
 ---
 username: gustavomagalhaes
-fullname: Gustavo Magalhães
+fullname: Gustavo Magalhães Pereira
 ---

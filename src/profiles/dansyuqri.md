@@ -1,4 +1,4 @@
 ---
-username: dansyuqri
+username: Dansyuqri
 fullname: Muhammad Syuqri
 ---

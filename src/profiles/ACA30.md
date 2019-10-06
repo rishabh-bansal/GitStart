@@ -1,4 +1,4 @@
 ---
 username: ACA30
-name: Nate
+fullname: Nate
 ---

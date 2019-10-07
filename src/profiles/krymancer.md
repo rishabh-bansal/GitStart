@@ -1,4 +1,4 @@
 ---
-username: krymancer
-fullname: Júnior Nascimento
+username: Krymancer
+fullname: Junior Nascimento
 ---

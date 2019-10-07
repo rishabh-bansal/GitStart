@@ -1,4 +1,4 @@
 ---
 username: GunnerJnr
-fullname: David Gunner (Jnr)
+fullname: David Gunner
 ---

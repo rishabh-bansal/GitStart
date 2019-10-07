@@ -36,6 +36,10 @@ const CheatSheet = () => (
       <Code code="$ git log"/>
     </p>
     <p>
+      Summary of changes made in the repository in oneline. 
+      <Code code="$ git log --oneline"/>
+    </p>
+    <p>
       Who changed what and when in a file
       <Code code="$ git blame <file>"/>
     </p>
@@ -47,6 +51,10 @@ const CheatSheet = () => (
     <p>
       Switch HEAD branch
       <Code code="$ git checkout <branch>"/>
+    </p>
+    <p>
+      Create a branch and switch HEAD
+      <Code code="$ git checkout -b <branch>"/>
     </p>
     <h2>Update and publish &nbsp;<i className="em em-lower_left_fountain_pen"></i></h2>
     <p>

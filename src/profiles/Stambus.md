@@ -1,4 +1,4 @@
 ---
-username: ***Stambus***
-fullname: ***Zygimantas Baltutis***
+username: Stambus
+fullname: Zygimantas Baltutis
 ---

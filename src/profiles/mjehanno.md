@@ -1,4 +1,4 @@
 ---
-username : mjehanno
-fullname : Mathob Jehanno
+username: mjehanno
+fullname: Mathob Jehanno
 ---

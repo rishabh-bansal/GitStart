@@ -1,4 +1,4 @@
 ---
-user name: sakthivel9963
-full name: sakthivel
+username: sakthivel9963
+fullname: sakthivel
 ---

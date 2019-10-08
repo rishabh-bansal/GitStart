@@ -1,4 +1,4 @@
 ---
 username: yRunTimeException
-fullname: Antônio Bernardino da Silva
+fullname: AntÃ´inio_Bernardino_da_Silva
 ---

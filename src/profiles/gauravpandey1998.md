@@ -1,4 +1,4 @@
 ---
-username:gauravpandey1998
-fullname:Gaurav Pandey
+username: gauravpandey1998
+fullname: Gaurav Pandey
 ----

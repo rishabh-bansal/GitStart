@@ -1,4 +1,4 @@
 ------
 username: Jeremy-Mitchell89
-fullname: Jeremy Mitchell
+fullname: Jeremy_Mitchell
 ---

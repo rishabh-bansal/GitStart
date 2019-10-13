@@ -1,4 +1,4 @@
 ---
-username: [SubhroSamya](https://github.com/SubhroSamya)
+username: SubhroSamya
 fullname: Samya Subhro Roy
 ---

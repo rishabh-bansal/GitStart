@@ -1,4 +1,4 @@
 ---
-username: SEETHAMRAJU
+username: seethamraju
 fullname: Seethamraju Purvaj
 ---

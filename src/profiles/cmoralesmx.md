@@ -1,4 +1,4 @@
 ---
-username: cmoralesmx  
-fullname: Carlos M.  
+username: cmoralesmx
+fullname: Carlos Morales
 ---

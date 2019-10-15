@@ -1,4 +1,4 @@
 ---
 username: shaktibarath
-fullname: Shakti Barath
+fullname: Shakti Barath.
 ---

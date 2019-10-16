@@ -1,4 +1,4 @@
 ---
-username: johnd
-fullname: John disang
+username: Johndisang
+fullname: John Disang
 ---

@@ -1,4 +1,4 @@
 ---
-username: Lohith 
-fullname: G lohith kumar
+username: LOHITH
+fullname: G_LOHITH_KUMAR
 ---

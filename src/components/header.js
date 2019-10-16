@@ -7,7 +7,11 @@ const Header = ({ siteTitle }) => (
     <div className="background-hero"></div>
     <div className="container">
       <div className="nav">
-        <div className="brand-text">{siteTitle}</div>
+        <div className="brand-text">
+          <a className="brand-text-link" href="https://www.gitstart.tech/">
+            {siteTitle}
+          </a>
+        </div>
         <div className="github-logo">
           <a
             className="github-button"

@@ -1,4 +1,4 @@
-# Rohit Jakhmola
+# Rohit Devarshetty
 
 ### Academics
 

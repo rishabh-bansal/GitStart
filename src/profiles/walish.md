@@ -1,4 +1,4 @@
 ---
 username: walish
-fullname: Quan 'Walish' Le
+fullname: Walish Le
 ---

@@ -1,4 +1,4 @@
 ---
-username: Sittichoke
+username: sittichoke
 fullname: Sittichoke krongboon
 ---

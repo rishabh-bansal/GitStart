@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+@import url("https://afeld.github.io/emoji-css/emoji.css");
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 6rem;
+  font-family: "Varela Round", sans-serif;
+  color: #373738;
+}
+
+.background-hero {
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 250px;
+  background: #4568dc; /* fallback for old browsers */
+  background: #000000;
+  background: #000000;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.content {
+  padding: 10px 20px 10px 20px;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.nav {
+  display: block;
+  overflow: auto;
+}
+
+.nav .brand-text {
+  display: inline-block;
+  float: left;
+  clear: both;
+  margin: 10px 10px 10px 15px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-family: "Roboto Mono", serif;
+}
+
+.nav .github-logo {
+  display: inline-block;
+  float: right;
+  margin: 15px 15px 10px 10px;
+  vertical-align: middle;
+}
+
+.nav .github-logo img {
+  height: 30px;
+  width: 40px;
+  transition: 0.2s;
+}
+
+.nav .github-logo img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card {
+  display: block;
+  padding: 0px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 30px auto;
+  -webkit-box-shadow: 0px 14px 30px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 14px 30px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 14px 30px -2px rgba(0, 0, 0, 0.3);
+}
+
+.tab-holder {
+  display: block;
+  width: inherit;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 30px -2px rgba(0, 0, 0, 0.3);
+}
+
+.tabs {
+  list-style-type: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+}
+
+.tabs li {
+  display: inline;
+}
+
+.tabs li a {
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #616063;
+  padding: 17px;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs a:hover {
+  color: #0366d6;
+}
+
+.tabs li a.active {
+  color: #000000;
+  border-bottom: 2px solid #0366d6;
+}
+
+.code {
+  background: rgb(238, 232, 238);
+  border-radius: 3px;
+  padding: 15px 20px 15px 20px;
+  overflow: auto;
+  color: #373738;
+  font-family: "Roboto Mono", monospace;
+}
+
+.card-container {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+
+.profile {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  text-decoration: none;
+  margin: 0px 5px 15px 5px;
+  transition: all 0.3s;
+  -webkit-box-shadow: 0px 5px 30px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 30px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 30px -5px rgba(0, 0, 0, 0.3);
+  justify-self: center;
+}
+
+.profile:hover {
+  -webkit-box-shadow: 0px 14px 30px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 14px 30px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 14px 30px -2px rgba(0, 0, 0, 0.3);
+}
+
+.profile p {
+  color: #373738;
+}
+.profile img {
+  display: block;
+  border-radius: 50%;
+  transition: all 0.3s;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px 20px 10px 20px;
+}
+
+.profile img:hover {
+  -webkit-box-shadow: 0px 10px 30px -2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 10px 30px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 30px -2px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  color: #616063;
+  text-align: center;
+}
+
+footer a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 400px) {
+  .tabs {
+    display: flex;
+  }
+}
+
+@media (min-width: 320px) {
+  .container {
+    width: 95%;
+  }
+  .tab-holder {
+    text-align: center;
+  }
+  .profile {
+    width: 100%;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .container {
+    width: 90%;
+  }
+  .tabs {
+    text-align: center;
+  }
+  .profile {
+    width: 80%;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) {
+  .tabs {
+    padding-left: 20px;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+  }
+}

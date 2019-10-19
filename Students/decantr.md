@@ -1,1 +1,0 @@
-Hacktoberfest! Have fun everyone!

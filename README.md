@@ -1,18 +1,6 @@
-# Welcome to GitHub!
-## This project is perfect for your first pull request
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ef50f459-d503-45a1-b9dd-b87e81e30117/deploy-status)](https://app.netlify.com/sites/gitstart/deploys)
 
-## Instructions-
+# Hello Developers :wave:
+## Let's help you submit your first Pull Request!
 
-- Fork this Repository using the button at the top
-- Clone your forked repository to your pc
-- Create a new branch for your modifications (ie. ```git branch new-user``` and check it out ```git checkout new-user``` and ``` git checkout -b new-user```)
-- Add your profile page in Students\
-- Add your files (```git add -A```), commit (```git commit -m "added myself"```) and push (```git push origin new-user```)
-- Create a pull request
-- Star this repository
-- Wait for Pull Request to merge
-- Celebrate - you've done your first pull request!!
-
-
-Read about markdown syntax here
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+Follow the instructions [here](https://gitstart.tech) to get started. 

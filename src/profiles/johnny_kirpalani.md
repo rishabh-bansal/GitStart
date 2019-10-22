@@ -1,2 +1,2 @@
-name: Johnny Kirpalani
+name: JOHNNY_KIRPALANI
 username: jkirpalani

@@ -1,4 +1,4 @@
 ---
-username: Psy0ch
+username: psy0ch
 fullname: Nick P.
 ---

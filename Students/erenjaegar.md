@@ -1,4 +1,4 @@
-# Teren Jimodu
+# Terence Jimodu
 
 ## About me:
 

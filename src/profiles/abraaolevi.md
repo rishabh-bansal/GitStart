@@ -1,4 +1,4 @@
 ---
 username: abraaolevi
-fullname: Abraão Levi
+fullname: Abraão Levi de Oliveira Figueredo
 ---

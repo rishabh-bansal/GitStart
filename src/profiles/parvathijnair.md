@@ -1,4 +1,4 @@
 ---
-username: Parvathi-J-Nair
+username: parvathijnair
 fullname: Parvathi J Nair
 ---

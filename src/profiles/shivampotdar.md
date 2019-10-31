@@ -1,4 +1,4 @@
 ---
-username : shivampotdar
-fullname : Shivam Potdar
+username: shivampotdar
+fullname: Shivam Potdar
 ---

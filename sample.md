@@ -1,4 +1,4 @@
 ---
-username: YOUR_USER_NAME
-fullname: YOUR_FULL_NAME
+Username: Please Enter Your Username
+Fullname: Please Enter Your Full Name
 ---

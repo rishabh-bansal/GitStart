@@ -5,5 +5,12 @@
 
 Follow the instructions [here](https://gitstart.tech) to get started. 
 
+-some commands to remember     
+git branch    
+git pull origin dev  
+git add .   
+git commit -m "first change"  
+git push origin dev  
+
 
 <a href="https://www.buymeacoffee.com/rishabhbansal" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>

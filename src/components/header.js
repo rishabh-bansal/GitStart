@@ -19,6 +19,7 @@ const Header = ({ siteTitle }) => (
           </a>
           <a target="_blank" href="https://github.com/rishabh-bansal/GitStart">
             <img alt="github-logo" src={github_logo} />
+            h
           </a>
         </div>
       </div>

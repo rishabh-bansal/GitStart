@@ -83,7 +83,7 @@ const CheatSheet = () => (
       Revert a commit
       <Code code="$ git revert <commit>"/>
     </p>
-    <h2>Setting up profile </h2>
+    <h2>Setting up profile &nbsp;<i className="em em-information_desk_person"></i></h2>
     <p>
       Using username
       <Code code="$ git config --global user.name \'YOUR_USERNAME\'"/>

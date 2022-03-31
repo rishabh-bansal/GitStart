@@ -34,6 +34,7 @@ const IndexPage = () => (
       we'll simply give the name of the branch as above. eg: <i>git branch rishabh-bansal-profile</i>. Once you have created the new branch we'll change the current brach from master to your newly created branch.
       Execute the following command on your terminal.
       <Code code="git checkout YOUR_BRANCH_NAME"/>
+      To avoid merge conflicts , you can add  <Code code="git remote add upstream https://github.com/zero-to-mastery/start-here-guidelines.git"></Code> and <Code code="git pull upstream master"></Code>    
     </p>
     <h3>Step 4</h3>
     <p>

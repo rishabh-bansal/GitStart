@@ -18,7 +18,7 @@ body {
   z-index: -10;
   width: 100%;
   height: 250px;
-  background: #4568dc; /* fallback for old browsers */
+  background: #4568dc; 
   background: #000000;
   background: #000000;
 }

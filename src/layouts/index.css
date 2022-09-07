@@ -198,6 +198,22 @@ footer a {
   text-decoration: none;
 }
 
+.btn-scroll-top{
+  opacity: 0.5;
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 5px;
+  border: none;
+  color:white;
+}
+.btn-scroll-top:hover{
+  opacity: 1;
+}
+
 /*
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px

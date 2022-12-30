@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Rishabh Bansal <rishabhbansal1855@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.277",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^2.0.11",

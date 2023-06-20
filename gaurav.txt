@@ -1,0 +1,14 @@
+Student of Gyan Ganga Institute of Science and Technology
+B.Tech. in Computer Science
+
+Languages :
+  1.C++
+  2.Python
+  3.C
+
+Topics:
+  1.Data Structures
+  2.Object Oriented Programming
+  3.Calculus
+  4.Algebra
+  5.Number Theory

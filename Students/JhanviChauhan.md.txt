@@ -1,0 +1,17 @@
+# Jhanvi Chauhan
+
+## Introduction:
+I’m an ICT major undergraduate student currently residing in Gujarat, India. I'm just trying to get a hang of git, GitHub and open source contribution in general.
+My go to language to use is C++. With baisc knowledge of HTML/CSS, I plan on exploring web development further in the near future. I hope to actively contribute to open-source. Apart from this, I play basketball and like to read. 
+
+## Languages that I know:
+
+- HTML
+- CSS
+- Python
+- C/C++
+
+
+[Check out my GitHub](https://github.com/JhanviChauhan)
+
+Email me: jhanvic2010@gmail.com

@@ -1,0 +1,2 @@
+I am Deepti Sharma. I belong to Ludhiana and currently pursuing B.tech in Computer Science. I believe that Learning is Earning. I have a keen interest in writing and creating new things with unique ideas. Apart from this I just love MUSIC, either it’s about listening songs or about singing.
+Though I am new to blogging, but I have developed a keen interest in it and just love sharing over here. The majority of my posts will be related to Computer, Programming, Internet and Linux and other Technical stuff. I also blog about my everyday experiences and my random thoughts 😉

@@ -3,4 +3,6 @@
 # Hello Developers :wave:
 ## Let's help you submit your first Pull Request!
 
-Follow the instructions [here](https://gitstart.tech) to get started. 
+Follow the instructions [here](https://gitstart.tech) to get started.
+
+Happy OpenSourcing!

@@ -1,0 +1,10 @@
+HELLO WORLD!
+-this is Archit Kumar Dwevedi(arch888)
+-A Delhi-ite,Desi, Simple yet Curious person.
+-As of today, Am a 19 year Btech student from JSSATEN who doesn't shares his food, loves programming
+,developing Web apps,and watching tv series.
+-My mother tongue is hindi, but i can also interact with other living and non living beings in English,
+ punjabi, java , python and C.(although google search  plays a big role in my life :p)
+-Currently am working on Web Development, and expanding my knowledge in opensource.
+
+-KnowMeMore : www.github.com/arch888

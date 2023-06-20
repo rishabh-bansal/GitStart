@@ -1,0 +1,1 @@
+Hi, I'm Kyle, and I'm a dev in nyc.

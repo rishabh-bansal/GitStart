@@ -49,7 +49,7 @@ const IndexPage = () => (
       ---
       </p>
       <p>
-        Donot forget that the hyphens "---" are also part of the file. Once you finish adding the content, save the file.
+        Do not forget that the hyphens "---" are also part of the file. Once you finish adding the content, save the file.
       </p>
     </p>
     <h3>Step 5</h3>

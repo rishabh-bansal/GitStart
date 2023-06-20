@@ -54,6 +54,12 @@ a {
   font-family: "Roboto Mono", serif;
 }
 
+.nav .brand-text .brand-text-link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .nav .github-logo {
   display: inline-block;
   float: right;

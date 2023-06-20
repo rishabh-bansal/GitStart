@@ -1,0 +1,9 @@
+name:Pedro Veríssimo
+
+Languages known: java
+C++
+Python
+HTML
+CSS
+
+github account link: https://github.com/pbv2

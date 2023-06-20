@@ -1,0 +1,23 @@
+<ion-content padding class="black-background">
+
+  <div class="top-margin">
+<h2 class="center-item white-font">Demo App</h2>
+
+
+<div class="bottom-border white-font" style="padding: 20px">
+
+<ion-input type="email" placeholder="Email" [(ngModel)]="user.email" name="email"></ion-input>
+<ion-input type="password" placeholder="Password" [(ngModel)]="user.password" name="password"></ion-input>
+<ion-input type="password"  placeholder="Confirm Password" [(ngModel)]="user.confirmPassword" name="confirmPassword"></ion-input>
+<ion-label *ngIf="user.password != user.confirmPassword" style="margin-top: 0" color="danger">*Password not matched</ion-label>
+<button class="button-style" ion-button [disabled]="ifEmpty()" (click)="signUp()">Sign Up<ion-icon style="padding-left: 50px" name="arrow-dropright"></ion-icon></button>
+</div>
+</div>
+
+  <div class="bottom-item" style="padding-left: 20px">
+  <label style="color:dimgray;padding-right: 15px">Already have an Account??</label>
+  <label class="white-font" (click)="logIn()">Log In</label>
+</div>
+
+
+</ion-content>

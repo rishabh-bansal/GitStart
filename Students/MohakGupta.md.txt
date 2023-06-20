@@ -1,0 +1,15 @@
+About Me:
+19 years old and second year BCA Student from Delhi. I love Android development and love to make different exciting and awesome Android apps which can solve real life problems.
+
+Skills:
+C
+C++
+Java
+Kotlin
+Dart
+Android
+Flutter
+Firebase
+
+Email me: mohak1936@gmail.com
+

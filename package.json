@@ -1,34 +1,17 @@
 {
-  "name": "GitStart",
-  "description": "GitStart",
-  "version": "1.0.0",
-  "author": "Rishabh Bansal <rishabhbansal1855@gmail.com>",
-  "dependencies": {
-    "gatsby": "^1.9.277",
-    "gatsby-link": "^1.6.46",
-    "gatsby-plugin-google-analytics": "^1.0.31",
-    "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sitemap": "^1.2.25",
-    "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
-    "react-helmet": "^5.2.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-  },
-  "devDependencies": {
-    "prettier": "^1.13.7"
-  },
+  "name": "gitstart",
+  "version": "2.0.0",
+  "description": "Make your first GitHub pull request",
+  "homepage": "https://gitstart.js.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/rishabh-bansal/GitStart.git"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "check": "node build.js --check",
+    "start": "node build.js && node -e \"const{createServer}=require('http'),{readFileSync,statSync}=require('fs'),{join,extname}=require('path');const T={'.html':'text/html','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.xml':'application/xml','.txt':'text/plain','.json':'application/json'};createServer((q,s)=>{let p=join('public',decodeURIComponent(q.url.split('?')[0]));try{if(statSync(p).isDirectory())p=join(p,'index.html')}catch(e){p='public/404.html'};try{s.writeHead(200,{'content-type':T[extname(p)]||'application/octet-stream'});s.end(readFileSync(p))}catch(e){s.writeHead(404);s.end('Not found')}}).listen(8080,()=>console.log('http://localhost:8080'))\""
   }
 }

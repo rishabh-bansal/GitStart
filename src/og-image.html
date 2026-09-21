@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  Source for static/og-image.png (the social preview card, 1200x630).
+
+  This is not part of the site build — the PNG is committed to static/ and
+  copied as-is, so the normal build stays dependency-free. Regenerate only
+  when the branding or the contributor count changes noticeably:
+
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+      --headless --disable-gpu --hide-scrollbars \
+      --window-size=1200,630 --default-background-color=00000000 \
+      --screenshot=static/og-image.png src/og-image.html
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  :root{
+    --bg:#0c0d10; --surface:#14161b; --line:#262a33;
+    --ink:#e9ebf0; --ink-2:#a2a9b8; --ink-3:#727a8c;
+    --accent:#ff9d4d; --accent-soft:rgba(255,157,77,.12);
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    --sans:"Helvetica Neue",Helvetica,-apple-system,"Segoe UI",Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;overflow:hidden}
+  body{
+    background:var(--bg);color:var(--ink);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;position:relative;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:72px 80px}
+
+  .glow{position:absolute;top:-220px;left:50%;transform:translateX(-50%);
+    width:1400px;height:700px;pointer-events:none;
+    background:radial-gradient(50% 60% at 50% 0%,var(--accent-soft),transparent 70%)}
+
+  .top{position:relative;display:flex;align-items:center;gap:14px}
+  .dot{width:18px;height:18px;border-radius:50%;background:var(--accent)}
+  .brand{font-size:30px;font-weight:700;letter-spacing:-.02em}
+  .url{margin-left:auto;font-family:var(--mono);font-size:21px;color:var(--ink-3)}
+
+  .mid{position:relative}
+  .eyebrow{font-family:var(--mono);font-size:19px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:26px}
+  h1{font-size:82px;line-height:1.02;letter-spacing:-.035em;font-weight:700;
+    max-width:19ch}
+  .lede{margin-top:28px;font-size:29px;line-height:1.45;color:var(--ink-2);max-width:30ch}
+
+  .bottom{position:relative;display:flex;align-items:center;gap:14px}
+  .chip{font-family:var(--mono);font-size:20px;color:var(--ink-2);
+    background:var(--surface);border:1px solid var(--line);
+    border-radius:10px;padding:12px 20px}
+  .chip strong{color:var(--ink);font-weight:600}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <div class="top">
+    <span class="dot"></span>
+    <span class="brand">GitStart</span>
+    <span class="url">gitstart.js.org</span>
+  </div>
+
+  <div class="mid">
+    <p class="eyebrow">Open source since 2017</p>
+    <h1>How to make your first GitHub pull request</h1>
+    <p class="lede">Seven steps, fifteen minutes, no prior git experience.</p>
+  </div>
+
+  <div class="bottom">
+    <span class="chip"><strong>541</strong> contributors</span>
+    <span class="chip"><strong>2,635</strong> forks</span>
+    <span class="chip">Beginner friendly</span>
+  </div>
+</body>
+</html>

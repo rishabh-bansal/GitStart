@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+# Builds the site and publishes it to GitHub Pages on every push to master.
+#
+# There is no npm install step because there are no dependencies. The custom
+# domain comes from public/CNAME, which build.js writes on every build — do not
+# set the domain in the repository's Pages settings as well, or the two will
+# fight and one will silently win.
+#
+# Enable once, under Settings -> Pages -> Build and deployment -> Source:
+# "GitHub Actions".
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deploys at once, but let a queued one finish rather than
+# cancelling it — a cancelled deploy can leave Pages serving a half-built site.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build
+        run: node build.js
+
+      - name: Verify the output before publishing anything
+        run: |
+          for f in index.html submissions/index.html cheatsheet/index.html \
+                   404.html sitemap.xml robots.txt styles.css CNAME og-image.png; do
+            test -s "public/$f" || { echo "missing or empty: public/$f"; exit 1; }
+          done
+          echo "custom domain: $(cat public/CNAME)"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,181 @@
+name: Check profile
+
+# Runs on every pull request: validates the contributor's profile file, tells
+# them exactly what to fix if it is wrong, and merges it if it is right.
+#
+# SECURITY NOTE — why pull_request_target is safe here:
+# This workflow needs write permission to comment and merge, which the plain
+# `pull_request` trigger does not grant to forks. `pull_request_target` does,
+# but it runs with the base repository's secrets, so checking out and executing
+# a contributor's code would hand them those secrets.
+#
+# We never do that. The checkout below is pinned to the BASE branch, so every
+# line of code that runs is code already merged into this repository. The only
+# thing taken from the pull request is the *text* of its .md files, fetched
+# through the API and treated purely as data by build.js. No contributor code
+# is ever executed.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: profile-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the base branch (never the pull request)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Inspect what the pull request changes
+        id: files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh api "repos/$REPO/pulls/$PR/files" --paginate \
+            --jq '.[] | [.filename, .status] | @tsv' > changed.tsv
+
+          total=$(wc -l < changed.tsv | tr -d ' ')
+          profiles=$(cut -f1 changed.tsv | grep -c '^src/profiles/.*\.md$' || true)
+          added=$(awk -F'\t' '$2=="added"' changed.tsv | cut -f1 | grep -c '^src/profiles/' || true)
+
+          {
+            echo "total=$total"
+            echo "profiles=$profiles"
+            echo "added=$added"
+            echo "list<<EOF"; cut -f1 changed.tsv; echo "EOF"
+            echo "names=$(cut -f1 changed.tsv | grep '^src/profiles/.*\.md$' | xargs -n1 basename 2>/dev/null | paste -sd, - )"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Fetch the profile files as data
+        if: steps.files.outputs.profiles != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          # Downloads only *.md text from src/profiles/. Nothing executable,
+          # and nothing outside that directory.
+          cut -f1 changed.tsv | grep '^src/profiles/[^/]*\.md$' | while read -r path; do
+            gh api "repos/$REPO/contents/$path?ref=$HEAD_SHA" --jq '.content' \
+              | base64 --decode > "$path" || true
+          done
+
+      - name: Validate
+        id: validate
+        run: |
+          set +e
+          node build.js --check --strict --only="${{ steps.files.outputs.names }}" > validation.txt 2>&1
+          code=$?
+          set -e
+          cat validation.txt
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+
+      - name: Confirm the whole site still builds
+        id: build
+        if: steps.validate.outputs.code == '0'
+        continue-on-error: true
+        run: node build.js
+
+      # ---------------------------------------------------------------- fail
+
+      - name: Explain what to fix
+        if: steps.validate.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          cat > comment.md <<'HEADER'
+          Thanks for opening a pull request — you're nearly there. The automated
+          check found a problem with your profile file:
+
+          ```
+          HEADER
+          cat validation.txt >> comment.md
+          cat >> comment.md <<'FOOTER'
+          ```
+
+          The file needs to look exactly like this, including both lines of three hyphens:
+
+          ```
+          ---
+          username: your-github-username
+          fullname: Your Full Name
+          ---
+          ```
+
+          Two things worth double-checking:
+
+          - `username` must be your **GitHub handle** — the name in your profile URL —
+            not your real name. It is what fetches your avatar.
+          - The file belongs in `src/profiles/`, and should be the only file you change.
+
+          Push a fix to the same branch and this check will run again automatically.
+          No need to open a new pull request.
+          FOOTER
+          gh pr comment "$PR" --body-file comment.md
+          exit 1
+
+      - name: Flag pull requests that change other files
+        if: steps.validate.outputs.code == '0' && steps.files.outputs.total != steps.files.outputs.profiles
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr comment "$PR" --body "$(cat <<'EOF'
+          Your profile file is valid — thank you.
+
+          This pull request also changes files outside `src/profiles/`, so it needs a
+          human to look at it before it can be merged. That is not a problem, it just
+          means it will take a little longer.
+
+          If you only meant to add your profile, it is usually because your fork has
+          drifted from the original. The quickest fix is a fresh branch from an
+          up-to-date fork containing just your one file.
+          EOF
+          )"
+          gh pr edit "$PR" --add-label "Awaiting Review" || true
+
+      # ---------------------------------------------------------------- pass
+
+      - name: Welcome and merge
+        if: >-
+          steps.validate.outputs.code == '0' &&
+          steps.build.outcome == 'success' &&
+          steps.files.outputs.total == '1' &&
+          steps.files.outputs.added == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          gh pr comment "$PR" --body "$(cat <<EOF
+          Everything checks out. Merging now — welcome to open source, @$AUTHOR.
+
+          Your profile will appear on <https://gitstart.js.org/submissions/> once the
+          site rebuilds, which takes a minute or two.
+
+          If this was your first pull request: what you just did — fork, branch, commit,
+          push, open a PR — is the same process used by every open-source project there
+          is. The next one will feel much easier.
+          EOF
+          )"
+          gh pr merge "$PR" --squash --delete-branch || \
+            gh pr comment "$PR" --body "Validated, but the automatic merge did not go through — a maintainer will merge this shortly."

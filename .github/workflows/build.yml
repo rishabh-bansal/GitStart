@@ -1,0 +1,47 @@
+name: Build
+
+# Safety net: proves the site still builds from a clean checkout with no
+# dependencies installed. If this ever fails, something is wrong with the
+# generator itself rather than with a contributor's file.
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build (no npm install — there are no dependencies)
+        run: node build.js
+
+      - name: Sanity-check the output
+        run: |
+          for f in index.html submissions/index.html cheatsheet/index.html \
+                   404.html sitemap.xml robots.txt styles.css CNAME; do
+            test -s "public/$f" || { echo "missing or empty: public/$f"; exit 1; }
+          done
+
+          count=$(grep -c 'class="person"' public/submissions/index.html)
+          files=$(ls src/profiles/*.md | wc -l | tr -d ' ')
+          echo "$count cards rendered from $files profile files"
+          test "$count" -eq "$files" || { echo "card count does not match profile count"; exit 1; }
+
+          grep -q '<link rel="canonical"' public/index.html || { echo "canonical tag missing"; exit 1; }
+          grep -q 'application/ld+json' public/index.html || { echo "structured data missing"; exit 1; }
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public/
+          retention-days: 7

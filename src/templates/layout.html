@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" data-theme="dark">
+<head>
+{{HEAD}}
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0c0d10" />
+<script>(function(){try{var t=localStorage.getItem("gitstart-theme");if(!t)t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme="dark";}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-dot" aria-hidden="true"></span>GitStart</a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-link{{ACTIVE_TUTORIAL}}" href="/"{{CUR_TUTORIAL}}>Tutorial</a>
+      <a class="nav-link{{ACTIVE_SUBMISSIONS}}" href="/submissions/"{{CUR_SUBMISSIONS}}>Submissions</a>
+      <a class="nav-link{{ACTIVE_CHEATSHEET}}" href="/cheatsheet/"{{CUR_CHEATSHEET}}>Cheatsheet</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+        <span class="icon-light" aria-hidden="true">&#9790;</span><span class="icon-dark" aria-hidden="true">&#9728;</span>
+      </button>
+    </nav>
+  </div>
+</header>
+{{MAIN}}
+<footer class="site-footer">
+  <div class="wrap">
+    <span>GitStart &mdash; an open-source first-pull-request tutorial. MIT licensed.</span>
+    <span><a href="{{REPO}}">Source on GitHub</a> &middot; static HTML, no trackers</span>
+  </div>
+</footer>
+<script>(function(){var b=document.getElementById("theme-toggle");if(!b)return;b.addEventListener("click",function(){var d=document.documentElement,n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;b.setAttribute("aria-label",n==="dark"?"Switch to light theme":"Switch to dark theme");try{localStorage.setItem("gitstart-theme",n);}catch(e){}});})();</script>
+</body>
+</html>

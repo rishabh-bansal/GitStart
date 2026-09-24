@@ -82,11 +82,14 @@ test('only forward same-major official Action SHA/version substitutions are acce
 test('merge refuses changed head/base, draft, conflicts and blocked/pending states', () => {
   const pr = makePr({ mergeable: true, mergeable_state: 'clean' });
   const expected = { head, base, branch: 'master' };
-  assert.doesNotThrow(() => assertUnchanged(pr, expected));
-  for (const changes of [{ head: { sha: 'c'.repeat(40) } }, { base: { sha: 'c'.repeat(40), ref: 'master' } },
+  assert.doesNotThrow(() => assertUnchanged(pr, expected, base));
+  assert.throws(() => assertUnchanged(pr, expected, 'c'.repeat(40)));
+  assert.throws(() => assertUnchanged(pr, expected));
+  assert.doesNotThrow(() => assertUnchanged({ ...pr, base: { ...pr.base, sha: 'd'.repeat(40) } }, expected, base), 'old PR base metadata must not replace the current branch ref');
+  for (const changes of [{ head: { sha: 'c'.repeat(40) } }, { base: { sha: base, ref: 'other' } },
     { draft: true }, { state: 'closed' }, { mergeable: null }, { mergeable: false },
     ...['blocked', 'dirty', 'behind', 'unstable', 'unknown'].map(mergeable_state => ({ mergeable_state }))])
-    assert.throws(() => assertUnchanged({ ...pr, ...changes }, expected));
+    assert.throws(() => assertUnchanged({ ...pr, ...changes }, expected, base));
 });
 
 test('workflow trust boundaries remain explicit and actions remain SHA-pinned', () => {

@@ -86,6 +86,12 @@ async function passedChecks(pr, request = api) {
   return ![...lastReview.values()].includes('CHANGES_REQUESTED');
 }
 
+async function currentBase() {
+  const ref = await api(`${prefix}/git/ref/heads/${encodeURIComponent(branch)}`);
+  if (!SHA.test(ref.object?.sha || '')) throw new Error('Cannot resolve current default branch.');
+  return ref.object.sha;
+}
+
 async function discover() {
   let candidates;
   if (event.workflow_run) {
@@ -116,7 +122,7 @@ async function validate() {
   if (!kind) { summary(`PR #${number} requires maintainer review; it is outside the automatic merge policy.`); return; }
   if (!await passedChecks(pr)) { summary(`PR #${number} is waiting for successful checks or review resolution.`); return; }
   const base = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
-  if (pr.base.sha !== base) throw new Error('The base branch moved during checkout. The daily retry will revalidate.');
+  if (await currentBase() !== base) throw new Error('The base branch moved during checkout. The daily retry will revalidate.');
   const headTree = await treeAt(pr.head.sha);
   for (const file of files) {
     if (headTree.get(file.filename)?.sha !== file.sha) throw new Error('Pull request content changed during validation.');
@@ -142,7 +148,7 @@ async function validate() {
     }
   }
   const current = await api(`${prefix}/pulls/${number}`);
-  assertUnchanged(current, { head: pr.head.sha, base, branch });
+  assertUnchanged(current, { head: pr.head.sha, base, branch }, await currentBase());
   output('head', pr.head.sha);
   output('base', base);
   output('eligible', 'true');
@@ -155,7 +161,7 @@ async function merge() {
   const base = process.env.EXPECTED_BASE;
   if (!/^\d+$/.test(number || '') || !SHA.test(head || '') || !SHA.test(base || '')) throw new Error('Missing validated pull request identifiers.');
   const pr = await api(`${prefix}/pulls/${number}`);
-  assertUnchanged(pr, { head, base, branch });
+  assertUnchanged(pr, { head, base, branch }, await currentBase());
   if (!classifyPullRequest(pr, await filesFor(pr), branch) || !await passedChecks(pr)) throw new Error('Pull request eligibility changed.');
   // GitHub atomically rejects a different head SHA and enforces branch rules.
   const result = await api(`${prefix}/pulls/${number}/merge`, { method: 'PUT', body: {

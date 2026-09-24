@@ -92,14 +92,26 @@ async function currentBase() {
   return ref.object.sha;
 }
 
+async function candidatesForRun(run, request = api) {
+  if (run.event !== 'pull_request' || run.conclusion !== 'success' || !SHA.test(run.head_sha || '')) return [];
+  let candidates = await request(`${prefix}/commits/${run.head_sha}/pulls?per_page=100`);
+  candidates = candidates.filter(pr => pr.head.sha === run.head_sha);
+  // GitHub can omit both commit associations and workflow_run.pull_requests
+  // for fork PRs. Query the exact source branch, then match the immutable SHA.
+  if (!candidates.length && run.head_repository?.full_name && run.head_branch) {
+    const owner = run.head_repository.full_name.split('/')[0];
+    const source = encodeURIComponent(`${owner}:${run.head_branch}`);
+    candidates = await request(`${prefix}/pulls?state=open&head=${source}&per_page=100`);
+    candidates = candidates.filter(pr => pr.head.sha === run.head_sha &&
+      pr.head.repo?.full_name === run.head_repository.full_name);
+  }
+  return candidates;
+}
+
 async function discover() {
   let candidates;
   if (event.workflow_run) {
-    if (event.workflow_run.event !== 'pull_request' || event.workflow_run.conclusion !== 'success' || !SHA.test(event.workflow_run.head_sha)) {
-      output('pulls', '[]'); return;
-    }
-    candidates = await api(`${prefix}/commits/${event.workflow_run.head_sha}/pulls?per_page=100`);
-    candidates = candidates.filter(pr => pr.head.sha === event.workflow_run.head_sha);
+    candidates = await candidatesForRun(event.workflow_run);
   } else if (process.env.REQUESTED_PR) {
     if (!/^\d+$/.test(process.env.REQUESTED_PR)) throw new Error('Provide a numeric pull request number.');
     candidates = [await api(`${prefix}/pulls/${process.env.REQUESTED_PR}`)];
@@ -183,4 +195,4 @@ if (require.main === module) {
   main().catch(error => { summary(error.message); process.exitCode = 1; });
 }
 
-module.exports = { passedChecks };
+module.exports = { passedChecks, candidatesForRun };

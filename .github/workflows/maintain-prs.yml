@@ -1,0 +1,80 @@
+name: Maintain pull requests
+
+# workflow_run reads only trusted default-branch scripts. It never consumes
+# artifacts, caches, scripts, or workflow output supplied by a pull request.
+on:
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
+  schedule:
+    - cron: '43 5 * * *'
+  workflow_dispatch:
+    inputs:
+      pull_request:
+        description: 'Optional PR number; otherwise inspect the 50 most recently updated open PRs'
+        required: false
+        type: string
+
+permissions: {}
+
+concurrency:
+  group: maintain-prs
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    if: >-
+      github.repository == 'rishabh-bansal/GitStart' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      pulls: ${{ steps.discover.outputs.pulls }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 'lts/*'
+          package-manager-cache: false
+      - id: discover
+        run: node scripts/automation-prs.js discover
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_PR: ${{ inputs.pull_request }}
+
+  maintain:
+    needs: discover
+    if: needs.discover.outputs.pulls != '[]'
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        pull: ${{ fromJSON(needs.discover.outputs.pulls) }}
+    uses: ./.github/workflows/merge-candidate.yml
+    with:
+      pull_request: ${{ matrix.pull }}
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+      checks: read
+      statuses: read
+
+  # GITHUB_TOKEN squash merges intentionally do not trigger push workflows.
+  # Run deployment explicitly, including if an earlier matrix item merged but
+  # a later item needed intervention. The deployment tests the latest master.
+  deploy:
+    needs: [discover, maintain]
+    if: always() && needs.discover.result == 'success' && needs.discover.outputs.pulls != '[]'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

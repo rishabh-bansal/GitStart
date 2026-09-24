@@ -79,6 +79,14 @@ function validateManifest(manifest) {
     filenames.add(candidate.path.toLowerCase());
   }
 }
+function assertNoReviewObjections(reviews) {
+  assert(Array.isArray(reviews) && reviews.length < 100, 'Review list is incomplete; inspect manually.');
+  const latest = new Map();
+  for (const review of reviews) {
+    if (['APPROVED', 'CHANGES_REQUESTED', 'DISMISSED'].includes(review.state)) latest.set(review.user.id, review.state);
+  }
+  assert(![...latest.values()].includes('CHANGES_REQUESTED'), 'An outstanding change request needs resolution before merging.');
+}
 function checkRegularProfile(tree, filename) {
   const entry = git('ls-tree', tree, '--', filename);
   assert(/^(100644|100755) blob [a-f0-9]{40}\t/.test(entry), 'Profile must be a regular Markdown file.');
@@ -147,6 +155,7 @@ function verifyCandidate(candidate) {
   } finally {
     fs.rmSync(temporary, { recursive: true, force: true });
   }
+  assertNoReviewObjections(api(`repos/${repository}/pulls/${number}/reviews?per_page=100`));
   const fresh = api(`repos/${repository}/pulls/${number}`);
   assert(fresh.state === 'open' && !fresh.draft && !fresh.merged, 'PR state changed during validation.');
   assert(fresh.base.repo.full_name === repository && fresh.base.ref === 'master', 'PR target changed during validation.');
@@ -206,4 +215,4 @@ async function main() {
   console.log(report);
 }
 if (require.main === module) main().catch(error => { console.error(error.message); process.exitCode = 1; });
-module.exports = { verifyCandidate, validateManifest };
+module.exports = { verifyCandidate, validateManifest, assertNoReviewObjections };

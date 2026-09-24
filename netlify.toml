@@ -1,0 +1,14 @@
+# Keep the existing Netlify integration compatible with the static rebuild.
+# GitHub Pages remains the canonical public URL in src/content.js.
+[build]
+  command = "node build.js"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Pages uses /GitStart/; mirror those paths for Netlify deploy previews.
+[[redirects]]
+  from = "/GitStart/*"
+  to = "/:splat"
+  status = 200

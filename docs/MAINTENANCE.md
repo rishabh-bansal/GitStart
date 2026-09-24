@@ -160,3 +160,12 @@ If a change broke the website, revert that change in a new commit, run verificat
 and redeploy. If hosting needs to move, build the site and publish `public/` to a
 static host, preserving URLs where possible. Keep the repository source, contributor
 records, and Git history together so the project remains reproducible.
+
+## Legacy Netlify previews
+
+The repository also has a Netlify integration. `netlify.toml` explicitly builds
+with `node build.js`, publishes `public/`, and mirrors `/GitStart/` paths so its
+previews work with the GitHub Pages URL configuration. GitHub Pages remains the
+canonical site. If this integration is removed later, remove its status checks
+and this optional configuration together; a failing external deployment check
+will otherwise prevent automatic merging.

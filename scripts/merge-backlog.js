@@ -102,6 +102,8 @@ function verifyCandidate(candidate) {
   assert(pr.head.sha === candidate.head_sha, 'PR head changed since review; review it again.');
   assert(pr.changed_files === 1, 'PR no longer changes exactly one file.');
   assert(pr.user.login.toLowerCase() === candidate.author.toLowerCase(), 'PR author changed since review.');
+  const base = api(`repos/${repository}/git/ref/heads/master`).object.sha;
+  assert(/^[a-f0-9]{40}$/.test(base), 'Cannot resolve current target branch.');
   const runtime = readTrustedRuntime();
   const files = api(`repos/${repository}/pulls/${number}/files?per_page=100`);
   assert(files.length === 1 && files[0].status === 'added', 'Only one added profile is supported.');
@@ -109,7 +111,7 @@ function verifyCandidate(candidate) {
   assert(filename === candidate.path, 'Changed file differs from review.');
   assert(/^src\/profiles\/[A-Za-z0-9][A-Za-z0-9._-]{0,63}\.md$/.test(filename), 'Unsafe profile filename.');
   ensureCommit(pr.head.sha);
-  ensureCommit(pr.base.sha);
+  ensureCommit(base);
   checkRegularProfile(pr.head.sha, filename);
   const bytes = command('git', ['show', `${pr.head.sha}:${filename}`], { encoding: null });
   assert(bytes.length <= 8192 && sha256(bytes) === candidate.sha256, 'Profile bytes changed or exceed 8 KiB.');
@@ -123,11 +125,11 @@ function verifyCandidate(candidate) {
   // the remote base. This prevents accidentally validating with different code.
   // Compare bytes explicitly so untracked local runtime files cannot bypass the
   // publication requirement. Build from this same snapshot below.
-  assertPublishedRuntime(pr.base.sha, runtime);
-  const mergeOutput = git('merge-tree', '--write-tree', pr.base.sha, pr.head.sha);
+  assertPublishedRuntime(base, runtime);
+  const mergeOutput = git('merge-tree', '--write-tree', base, pr.head.sha);
   const tree = mergeOutput.split('\n')[0];
   assert(/^[a-f0-9]{40}$/.test(tree), 'Merge did not produce a valid tree.');
-  const changes = git('diff', '--name-status', pr.base.sha, tree);
+  const changes = git('diff', '--name-status', base, tree);
   assert(changes === `A\t${filename}`, 'Merged tree contains unexpected changes.');
 
   const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'gitstart-backlog-'));
@@ -160,8 +162,8 @@ function verifyCandidate(candidate) {
   assert(fresh.state === 'open' && !fresh.draft && !fresh.merged, 'PR state changed during validation.');
   assert(fresh.base.repo.full_name === repository && fresh.base.ref === 'master', 'PR target changed during validation.');
   assert(fresh.head.sha === pr.head.sha, 'PR head moved during validation.');
-  assert(fresh.base.sha === pr.base.sha, 'Target branch moved during validation; retry against its new state.');
-  return { head: pr.head.sha, base: pr.base.sha, tree };
+  assert(api(`repos/${repository}/git/ref/heads/master`).object.sha === base, 'Target branch moved during validation; retry against its new state.');
+  return { head: pr.head.sha, base, tree };
 }
 
 async function main() {

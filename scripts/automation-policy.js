@@ -76,9 +76,9 @@ function actionUpdates(before, after) {
   return updates;
 }
 
-function assertUnchanged(pr, expected) {
+function assertUnchanged(pr, expected, currentBase) {
   if (pr.state !== 'open' || pr.draft || pr.head.sha !== expected.head ||
-      pr.base.sha !== expected.base || pr.base.ref !== expected.branch)
+      currentBase !== expected.base || pr.base.ref !== expected.branch)
     throw new Error('The pull request or base branch changed after validation. Retry the check.');
   // Do not bypass branch protections, pending checks, conflicts or requested changes.
   if (pr.mergeable !== true || pr.mergeable_state !== 'clean')

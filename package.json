@@ -2,7 +2,7 @@
   "name": "gitstart",
   "version": "2.0.0",
   "description": "Make your first GitHub pull request",
-  "homepage": "https://gitstart.js.org",
+  "homepage": "https://rishabh-bansal.github.io/GitStart/",
   "repository": {
     "type": "git",
     "url": "https://github.com/rishabh-bansal/GitStart.git"
@@ -12,6 +12,10 @@
   "scripts": {
     "build": "node build.js",
     "check": "node build.js --check",
-    "start": "node build.js && node -e \"const{createServer}=require('http'),{readFileSync,statSync}=require('fs'),{join,extname}=require('path');const T={'.html':'text/html','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon','.xml':'application/xml','.txt':'text/plain','.json':'application/json'};createServer((q,s)=>{let p=join('public',decodeURIComponent(q.url.split('?')[0]));try{if(statSync(p).isDirectory())p=join(p,'index.html')}catch(e){p='public/404.html'};try{s.writeHead(200,{'content-type':T[extname(p)]||'application/octet-stream'});s.end(readFileSync(p))}catch(e){s.writeHead(404);s.end('Not found')}}).listen(8080,()=>console.log('http://localhost:8080'))\""
+    "test": "node --test",
+    "start": "node build.js && node server.js"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }

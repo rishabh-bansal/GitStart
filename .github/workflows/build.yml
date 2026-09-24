@@ -1,47 +1,36 @@
 name: Build
 
-# Safety net: proves the site still builds from a clean checkout with no
-# dependencies installed. If this ever fails, something is wrong with the
-# generator itself rather than with a contributor's file.
-
 on:
   push:
     branches: [master]
+  pull_request:
+    branches: [master]
+    types: [opened, synchronize, reopened, ready_for_review]
+  schedule:
+    - cron: '17 6 * * 1'
   workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: build-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build:
+  test:
+    name: Test and build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          node-version: '20'
-
-      - name: Build (no npm install — there are no dependencies)
-        run: node build.js
-
-      - name: Sanity-check the output
-        run: |
-          for f in index.html submissions/index.html cheatsheet/index.html \
-                   404.html sitemap.xml robots.txt styles.css CNAME; do
-            test -s "public/$f" || { echo "missing or empty: public/$f"; exit 1; }
-          done
-
-          count=$(grep -c 'class="person"' public/submissions/index.html)
-          files=$(ls src/profiles/*.md | wc -l | tr -d ' ')
-          echo "$count cards rendered from $files profile files"
-          test "$count" -eq "$files" || { echo "card count does not match profile count"; exit 1; }
-
-          grep -q '<link rel="canonical"' public/index.html || { echo "canonical tag missing"; exit 1; }
-          grep -q 'application/ld+json' public/index.html || { echo "structured data missing"; exit 1; }
-
-      - uses: actions/upload-artifact@v4
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          name: site
-          path: public/
-          retention-days: 7
+          node-version: 'lts/*'
+          package-manager-cache: false
+      - name: Test
+        run: npm test
+      - name: Build and validate all profiles
+        run: npm run build

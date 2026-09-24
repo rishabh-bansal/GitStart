@@ -1,22 +1,17 @@
-<!--
-Adding yourself to the contributor wall? Then this is all you need:
+<!-- Profile contribution: add src/profiles/YOUR-GITHUB-USERNAME.md with
+     username and fullname frontmatter. Your filename and username must match
+     the GitHub account opening this PR. Do not edit somebody else's profile. -->
 
-  - exactly one new file
-  - in src/profiles/
-  - named YOUR-GITHUB-USERNAME.md
+### What changed
 
-An automated check will look at it within a minute of you opening this, and
-will tell you exactly what to change if something is off. You do not need to
-get it right first time.
--->
+<!-- Describe the profile, fix, or improvement. -->
 
-### What this adds
+### Validation
 
-<!-- e.g. "My profile" — one line is fine. -->
+- [ ] I read CONTRIBUTING.md.
+- [ ] For a profile: I added exactly one file named after my GitHub username.
+- [ ] For code or documentation: I explained the change and checked the result.
 
-### Checklist
-
-- [ ] One new file, in `src/profiles/`
-- [ ] Named after my GitHub username, ending in `.md`
-- [ ] `username:` is my GitHub handle, not my real name
-- [ ] The base repository above is `rishabh-bansal/GitStart`
+<!-- Eligible profile additions merge after successful checks. Code, docs,
+     profile edits and major dependency changes need maintainer review.
+     Check the Actions job summary for automatic merge eligibility. -->

@@ -4,10 +4,8 @@
  *
  * Reads src/profiles/*.md and writes a complete static site to public/.
  *
- * Deliberately has ZERO dependencies — only Node's own `fs` and `path`. The
- * previous version of this site was a 2017 Gatsby app with 1,582 packages and
- * 233 open security advisories; it survived nine years only because nobody
- * touched it. Nothing here needs updating, so nothing here can rot.
+ * Uses only Node built-ins. The generated HTML has no runtime dependencies.
+ * Hosting, GitHub Actions and the build runtime still need periodic review.
  *
  *   node build.js           build the site into public/
  *   node build.js --check   validate every profile and exit (used by CI)
@@ -17,7 +15,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { site, steps, cheatsheet, pages } = require('./src/content.js');
+const { site, steps, cheatsheet, pages, faqs } = require('./src/content.js');
 
 const ROOT = __dirname;
 const SRC = path.join(ROOT, 'src');
@@ -47,10 +45,10 @@ function escJson(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c').replace(/>/g, '\\u003e');
 }
 
-/** Replace {{TOKEN}} placeholders. Unknown tokens are left alone so they're visible. */
+/** Replace known template slots; fail early when a template and its data diverge. */
 function fill(template, values) {
   return template.replace(/\{\{([A-Z_]+)\}\}/g, (match, key) =>
-    Object.prototype.hasOwnProperty.call(values, key) ? values[key] : match
+    Object.prototype.hasOwnProperty.call(values, key) ? values[key] : (() => { throw new Error(`Unknown template token: ${key}`); })()
   );
 }
 
@@ -83,14 +81,16 @@ function parseProfile(filename, raw, strict) {
     );
   }
 
-  const fields = {};
+  const fields = Object.create(null);
   for (const line of match[1].split(/\r?\n/)) {
     if (!line.trim()) continue;
     const kv = /^([A-Za-z_][A-Za-z0-9_-]*)[ \t]*:[ \t]*(.*)$/.exec(line);
     if (!kv) {
       throw new Error(`this line in the frontmatter could not be read: "${line.trim()}"`);
     }
-    fields[kv[1].toLowerCase()] = kv[2].trim().replace(/^["']|["']$/g, '').trim();
+    const key = kv[1].toLowerCase();
+    if (Object.hasOwn(fields, key)) throw new Error(`duplicate field: ${key}`);
+    fields[key] = kv[2].trim().replace(/^["']|["']$/g, '').trim();
   }
 
   for (const key of ['username', 'fullname']) {
@@ -120,6 +120,10 @@ function parseProfile(filename, raw, strict) {
       `the filename does not match the username inside it.\n` +
       `  Rename the file to "${expected}", or correct the username line.`
     );
+  }
+
+  if (fields.fullname.length > 120 || /[\x00-\x1f\x7f]/.test(fields.fullname)) {
+    throw new Error('fullname must be 1–120 characters without control characters');
   }
 
   return { username: fields.username, fullname: fields.fullname };
@@ -198,8 +202,8 @@ function renderPeople(profiles) {
       const name = esc(p.fullname);
       const user = esc(p.username);
       return `    <li>
-      <a class="person" href="https://github.com/${user}" rel="noopener">
-        <img class="person-avatar" src="https://github.com/${user}.png?size=144" alt="${name} — GitHub avatar" width="72" height="72" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/avatar-fallback.svg'" />
+      <a class="person" href="https://github.com/${user}" rel="noopener ugc">
+        <img class="person-avatar" src="https://github.com/${user}.png?size=144" alt="${name} — GitHub avatar" width="72" height="72" loading="lazy" decoding="async" data-fallback="/avatar-fallback.svg" />
         <span class="person-name">${name}</span>
         <span class="person-handle">@${user}</span>
       </a>
@@ -232,7 +236,7 @@ const BASE = new URL(site.url).pathname.replace(/\/+$/, '');
 /** Prefix root-relative href/src attributes with the base path. */
 function withBase(html) {
   if (!BASE) return html;
-  return html.replace(/\b(href|src)="\/(?!\/)/g, `$1="${BASE}/`);
+  return html.replace(/\b(href|src|data-fallback)="\/(?!\/)/g, `$1="${BASE}/`);
 }
 
 function canonicalFor(dir) {
@@ -240,12 +244,19 @@ function canonicalFor(dir) {
 }
 
 /**
- * Structured data. The tutorial gets HowTo (each step is a HowToStep, which is
- * what can earn a rich result for "how to make a pull request"); inner pages
- * get a BreadcrumbList.
+ * Structured data describes visible content. HowTo is semantic markup only;
+ * Google no longer displays HowTo rich results. Inner pages have breadcrumbs.
  */
 function structuredData(key, page, profiles) {
-  const blocks = [];
+  const blocks = [{
+    '@context': 'https://schema.org', '@type': 'WebSite',
+    '@id': `${site.url}/#website`, name: site.name, url: `${site.url}/`, inLanguage: site.locale,
+  }, {
+    '@context': 'https://schema.org', '@type': 'WebPage',
+    '@id': `${canonicalFor(page.dir)}#webpage`, url: canonicalFor(page.dir),
+    name: page.metaTitle, description: page.description, inLanguage: site.locale,
+    isPartOf: { '@id': `${site.url}/#website` },
+  }];
 
   if (key === 'tutorial') {
     blocks.push({
@@ -316,6 +327,11 @@ function headFor(key, page, profiles) {
     `<meta property="og:description" content="${esc(page.description)}" />`,
     `<meta property="og:url" content="${canonical}" />`,
     `<meta property="og:image" content="${ogImage}" />`,
+    '<meta property="og:image:width" content="1200" />',
+    '<meta property="og:image:height" content="630" />',
+    '<meta property="og:image:alt" content="GitStart — your first pull request starts here" />',
+    '<meta name="robots" content="index,follow,max-image-preview:large" />',
+    '<meta name="referrer" content="strict-origin-when-cross-origin" />',
     `<meta name="twitter:card" content="summary_large_image" />`,
     `<meta name="twitter:title" content="${esc(page.metaTitle)}" />`,
     `<meta name="twitter:description" content="${esc(page.description)}" />`,
@@ -335,8 +351,8 @@ function renderPage(key, page, profiles, layout) {
     PEOPLE: renderPeople(profiles),
     ROWS: renderCheatsheet(),
     COUNT: count,
-    STARS: site.stars,
-    FORKS: site.forks,
+    FAQS: faqs.map(([question, answer]) => `<details><summary>${esc(question)}</summary><p>${answer}</p></details>`).join('\n'),
+    STEP_LINKS: steps.map((step, i) => `<li><a href="#${step.id}"><span>${String(i + 1).padStart(2, '0')}</span>${esc(step.title)}</a></li>`).join('\n'),
   });
 
   const active = (name) => (key === name ? ' is-active' : '');
@@ -358,19 +374,11 @@ function renderPage(key, page, profiles, layout) {
 
 function renderSitemap() {
   const urls = Object.values(pages).map((p) => canonicalFor(p.dir));
-  const today = new Date().toISOString().slice(0, 10);
-  return (
-    '<?xml version="1.0" encoding="UTF-8"?>\n' +
+  // Omit lastmod rather than claiming every unchanged page was updated today.
+  return '<?xml version="1.0" encoding="UTF-8"?>\n' +
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-    urls
-      .map(
-        (u, i) =>
-          `  <url>\n    <loc>${u}</loc>\n    <lastmod>${today}</lastmod>\n` +
-          `    <changefreq>weekly</changefreq>\n    <priority>${i === 0 ? '1.0' : '0.8'}</priority>\n  </url>`
-      )
-      .join('\n') +
-    '\n</urlset>\n'
-  );
+    urls.map((url) => `  <url><loc>${esc(url)}</loc></url>`).join('\n') +
+    '\n</urlset>\n';
 }
 
 /** A neutral circular avatar for accounts that no longer exist. */
@@ -423,6 +431,8 @@ function build() {
   written.push(write('404.html', withBase(notFound)));
 
   fs.copyFileSync(path.join(SRC, 'styles.css'), path.join(OUT, 'styles.css'));
+  fs.copyFileSync(path.join(SRC, 'site.js'), path.join(OUT, 'site.js'));
+  write('.nojekyll', '');
   write('avatar-fallback.svg', AVATAR_FALLBACK);
   write('sitemap.xml', renderSitemap());
   write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
@@ -463,4 +473,6 @@ function main() {
   }
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = { parseProfile, loadProfiles, build, esc, fill, withBase, renderSitemap };

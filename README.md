@@ -1,120 +1,120 @@
-# GitStart — make your first GitHub pull request
+# GitStart
 
-**[gitstart.js.org](https://gitstart.js.org)** · a free, beginner-friendly place to practise
-contributing to open source.
+Learn to make a GitHub pull request by making one. GitStart is a free, open-source
+practice project: fork the repository, add your profile, and submit a small change.
+Merged profiles appear on the contributor wall.
+
+[Start the tutorial](https://rishabh-bansal.github.io/GitStart/) ·
+[Meet the contributors](https://rishabh-bansal.github.io/GitStart/submissions/) ·
+[Git cheatsheet](https://rishabh-bansal.github.io/GitStart/cheatsheet/)
 
 [![Build](https://github.com/rishabh-bansal/GitStart/actions/workflows/build.yml/badge.svg)](https://github.com/rishabh-bansal/GitStart/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
-Your first pull request is the hardest one. Not because it is difficult, but because every
-real project feels like somewhere you might break something. This repository exists purely
-so you can practise: fork it, add a small file with your name in it, and open a pull request.
-Nothing you do here can break anything.
+## Make your first contribution
 
-When it is merged, your avatar joins **541 people** who have done the same thing since 2017.
+You need a GitHub account, [Git](https://git-scm.com/downloads), and a text editor.
+You do not need Node.js to add a profile. Replace `YOUR-USERNAME` below with your
+GitHub username.
 
----
+1. [Fork this repository](https://github.com/rishabh-bansal/GitStart/fork).
+2. Clone **your fork** and create a branch:
 
-## Contribute in five minutes
+   ```sh
+   git clone https://github.com/YOUR-USERNAME/GitStart.git
+   cd GitStart
+   git checkout -b add-YOUR-USERNAME
+   ```
 
-The full walkthrough, with an explanation of what each command actually does, is at
-**[gitstart.js.org](https://gitstart.js.org)**. The short version:
+3. Create `src/profiles/YOUR-USERNAME.md` with this content:
 
-```bash
-# 1. Fork this repo on GitHub, then clone YOUR fork
-git clone https://github.com/YOUR-USERNAME/GitStart.git
-cd GitStart
+   ```markdown
+   ---
+   username: YOUR-USERNAME
+   fullname: Your Display Name
+   ---
+   ```
 
-# 2. Make a branch
-git checkout -b add-YOUR-USERNAME
+   Use your GitHub handle for `username`. Your display name will be public; it
+   does not have to be your legal name. Add only these two fields.
 
-# 3. Create src/profiles/YOUR-USERNAME.md  (contents below)
+4. Save, commit, and push that one file:
 
-# 4. Commit and push
-git add src/profiles/YOUR-USERNAME.md
-git commit -m "Add YOUR-USERNAME to contributors"
-git push -u origin add-YOUR-USERNAME
+   ```sh
+   git add src/profiles/YOUR-USERNAME.md
+   git commit -m "Add YOUR-USERNAME to contributors"
+   git push -u origin add-YOUR-USERNAME
+   ```
+
+5. Open a pull request with **base repository `rishabh-bansal/GitStart`** and
+   **base branch `master`**. Review the **Files changed** tab before submitting.
+
+Automated checks validate eligible contributions and attempt a squash merge
+when validation and repository rules allow it. Website changes need maintainer
+review. A successful merge appears on the site after a successful deployment;
+neither merging nor deployment has a guaranteed turnaround time.
+
+For setup, authentication, and fixing a pull request, see
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Work on the website
+
+The site is generated with Node.js built-in modules and served as static HTML and
+CSS. There are no npm dependencies, frontend framework, database, or production
+application server. Small browser enhancements are optional; the tutorial and
+contributor links work without JavaScript.
+
+Use **Node.js 24 or a newer supported LTS release**. No `npm install` is needed.
+Continuous integration follows the current LTS release.
+
+```sh
+npm run check    # Validate contributor data
+npm test         # Run regression checks
+npm run build    # Generate public/
+npm start        # Build and preview at http://localhost:8080
 ```
 
-Then open the pull request on GitHub.
+`public/` is generated output. Edit source files, then rebuild; do not commit
+generated pages.
 
-Your file must contain exactly this, including both lines of three hyphens:
+| Path | Purpose |
+| --- | --- |
+| `src/content.js` | Site configuration, page metadata, tutorial, and cheatsheet |
+| `src/templates/` | HTML layouts and page templates |
+| `src/styles.css` | Styles and responsive layout |
+| `src/site.js` | Optional browser enhancements |
+| `src/profiles/` | Contributor records |
+| `static/` | Icons and other static assets |
+| `build.js` | Static site generator |
+| `server.js` | Local preview server |
+| `test/` | Regression checks |
+| `scripts/` | Trusted automation and merge policy |
+| `.github/` | Checks, deployment, and contribution automation |
 
-```markdown
----
-username: YOUR-USERNAME
-fullname: Your Full Name
----
-```
+## Built to last
 
-`username` is your **GitHub handle** — the name in your profile URL. It is what fetches your
-avatar. `fullname` is how you want to be shown on the wall.
+Plain files, portable static output, and a small dependency surface reduce the
+work needed to keep GitStart running. They cannot guarantee five or ten years
+without maintenance: Node.js, GitHub Actions, hosting, DNS, and external avatars
+still change. Automated checks and update proposals help keep that work small.
+Eligible new profiles and narrowly validated Dependabot updates to official GitHub
+Actions can merge automatically. Source changes and major updates need review.
 
-A bot checks your file within a minute of you opening the pull request. If something is wrong
-it tells you exactly what to change; if it is right, it merges automatically. You do not need
-to get it right first time.
+Keep published Git history and contributor attribution intact. Use squash merges
+for future pull requests to keep each change easy to review and revert.
 
-### The four things that go wrong
+- [Architecture](docs/ARCHITECTURE.md): how the site is generated and indexed.
+- [Maintenance](docs/MAINTENANCE.md): deployment, updates, automation, and recovery.
+- [Review](docs/REVIEW.md): problems addressed and remaining operating limits.
+- [Contributing](CONTRIBUTING.md): profiles, website improvements, and bug reports.
+- [Code of Conduct](CODE_OF_CONDUCT.md): expectations for everyone participating.
 
-1. **Cloning the original instead of your fork.** The clone URL must have *your* username in
-   it. Run `git remote -v` to check.
-2. **Wrong folder.** The file goes in `src/profiles/`, nowhere else.
-3. **Real name in the `username` field.** That field wants your GitHub handle.
-4. **Wrong base repository.** When you open the pull request, the base must be
-   `rishabh-bansal/GitStart`. If you forked someone else's fork, GitHub sometimes preselects
-   the wrong target — this has misdirected thousands of pull requests.
+GitStart is an independent learning project. Participation does not guarantee
+credit in third-party contribution programs.
 
----
+## License and credit
 
-## Working on the site itself
-
-The site is static HTML generated by one script with **zero dependencies**. There is no
-framework, no bundler, and no `node_modules`. You need Node 18 or newer and nothing else.
-
-```bash
-node build.js          # build into public/
-node build.js --check  # validate every profile without building
-npm start              # build, then serve at http://localhost:8080
-```
-
-The build takes about 0.15 seconds.
-
-### Layout
-
-```
-build.js              the generator — reads profiles, writes the site
-src/
-  content.js          every word of site copy, and the tutorial steps
-  styles.css          the whole stylesheet
-  templates/          page shells with {{TOKEN}} placeholders
-  profiles/           one markdown file per contributor  ← your file goes here
-public/               build output, regenerated every time, never committed
-```
-
-To change what the site *says*, edit `src/content.js`. To change how it *looks*, edit
-`src/styles.css`. Neither requires touching `build.js`.
-
-### Why no dependencies
-
-This project spent its first nine years as a 2017-era framework app with 1,582 packages and
-233 open security advisories, and survived only because nobody touched it. The rewrite has
-nothing to update, so nothing can rot. It should still build unchanged in ten years.
-
----
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide, and
-[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for how we expect people to treat each other.
-
-Beginners are the entire point of this project. There is no such thing as a question that is
-too basic here — if something in the instructions is unclear, that is a bug in the
-instructions, and [an issue](https://github.com/rishabh-bansal/GitStart/issues) about it is a
-genuinely useful contribution.
-
-Hacktoberfest participants are welcome. This project is not affiliated with, or endorsed by,
-any Hacktoberfest organizer.
-
-## License
-
-[MIT](LICENSE.md) © Rishabh Bansal
+[MIT](LICENSE.md), created by Rishabh Bansal and improved by the project's
+[contributors](https://github.com/rishabh-bansal/GitStart/graphs/contributors).
+Contributor profiles and the existing commit history preserve the community's
+work across versions of the site.

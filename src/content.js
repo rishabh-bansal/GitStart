@@ -1,8 +1,7 @@
 /**
  * All site copy and configuration, in one place.
  *
- * Edit this file to change what the site says. Nothing here is generated, and
- * nothing else in the project needs to change when you edit it.
+ * Edit this file to change what the site says. The build renders this into static HTML.
  */
 
 'use strict';
@@ -32,9 +31,6 @@ const site = {
   branch: 'master',
   profileDir: 'src/profiles',
   locale: 'en',
-  // Shown in the hero. Update when the numbers move meaningfully.
-  stars: '499',
-  forks: '2,635',
 };
 
 /**
@@ -135,10 +131,10 @@ const steps = [
       `push on this branch is just <code>git push</code>.`,
     cmd: 'git push -u origin add-YOUR-USERNAME',
     tip:
-      `If this asks for a password, GitHub wants a <strong>personal access token</strong>, not your ` +
-      `account password — account passwords stopped working for git in 2021. Create one at ` +
-      `<a href="https://github.com/settings/tokens">github.com/settings/tokens</a> and paste it as ` +
-      `the password.`,
+      `For HTTPS sign-in, use <strong>Git Credential Manager</strong>, GitHub CLI, or a personal access token. Never use your ` +
+      `account password. Follow ` +
+      `<a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-command-line">GitHub’s command-line authentication guide</a>. Keep tokens private; never put them in ` +
+      `your profile file.`,
   },
   {
     id: 'step-7',
@@ -149,13 +145,13 @@ const steps = [
       `<strong>Compare &amp; pull request</strong>. Click it, give it a short title, then press ` +
       `<strong>Create pull request</strong>.<br><br>` +
       `That's it. You've contributed to open source. A check runs automatically on your file and tells ` +
-      `you within a minute if anything needs fixing.`,
+      `you if anything needs fixing. Eligible profile-only changes can merge automatically after validation.`,
     cmd: '# Back to github.com — press "Compare & pull request"',
     tip:
       `Before submitting, check the <strong>base repository</strong> dropdown reads ` +
       `<code>${site.repoSlug}</code> and the base branch is <code>${site.branch}</code>. If you forked ` +
       `a fork, GitHub sometimes preselects the wrong target and your pull request lands on a stranger's ` +
-      `project. This has happened here thousands of times.`,
+      `project. Always check before submitting.`,
   },
 ];
 
@@ -194,9 +190,9 @@ const pages = {
     dir: 'submissions',
     template: 'submissions',
     title: 'Contributors',
-    metaTitle: 'Contributors who made their first pull request — GitStart',
+    metaTitle: 'GitStart contributor wall — practise your first pull request',
     description:
-      'Everyone who has completed the GitStart tutorial and opened their first pull request. ' +
+      'Meet the people who have contributed a profile to GitStart. ' +
       'Finish the seven steps and your avatar joins the wall.',
   },
   cheatsheet: {
@@ -210,4 +206,13 @@ const pages = {
   },
 };
 
-module.exports = { site, steps, cheatsheet, pages };
+const faqs = [
+  ['What is a pull request?', 'A pull request proposes changes from one branch to another. It gives maintainers a place to review the difference, run checks, and merge the contribution into the project.'],
+  ['Do I need to know how to code?', 'No. This exercise adds a small text file with your GitHub username and display name. You will practise the same fork, branch, commit, and pull request workflow used in software projects.'],
+  ['What is the difference between a fork and a clone?', 'A fork is your copy of a repository on GitHub. A clone is a local copy on your computer. Fork first, then clone your fork so you have somewhere you can push your changes.'],
+  ['Why did my pull request fail a check?', 'Open the pull request’s Checks tab and read the validation result. Check the folder, file extension, username, and frontmatter. Commit a correction to the same branch and push again; the pull request updates automatically.'],
+  ['When will my profile appear?', 'Your profile appears after the pull request is merged and the next website deployment succeeds. Eligible profile-only changes are checked automatically. Changes to existing profiles, code, or documentation need maintainer review.'],
+  ['Does this count toward Hacktoberfest?', 'GitStart is a practice project and does not promise event credit. Check the current <a href="https://hacktoberfest.com/participation/">Hacktoberfest participation rules</a>; simple practice contributions may not qualify.'],
+];
+
+module.exports = { site, steps, cheatsheet, pages, faqs };

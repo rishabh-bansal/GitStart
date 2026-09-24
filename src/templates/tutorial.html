@@ -1,25 +1,34 @@
 <main class="site-main" id="main">
   <section class="hero">
-    <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-inner">
-      <p class="eyebrow">Open source since 2017 &middot; {{STARS}} stars &middot; {{FORKS}} forks</p>
-      <h1>How to make your first GitHub pull request</h1>
-      <p class="hero-lede">Seven steps, about fifteen minutes, no prior git experience required. Fork this repository, add a file with your name in it, and open a pull request. When it&rsquo;s merged, your avatar joins the wall of {{COUNT}} contributors.</p>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A small first step into open source</p>
+      <h1>Your first pull request.<br><span>Start right here.</span></h1>
+      <p class="hero-lede">Learn Git by doing something real. Fork a repository, add your name, and make your first GitHub pull request. We’ll walk you through it.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#step-1">Start step 1</a>
-        <a class="btn btn-secondary" href="/submissions/">See the contributors</a>
+        <a class="btn btn-primary" href="#before-you-start">Let’s make a pull request <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-secondary" href="/submissions/">Meet the contributors</a>
       </div>
-      <p class="fineprint">Beginner-friendly and open to Hacktoberfest contributions. Not affiliated with, or endorsed by, any Hacktoberfest organizer.</p>
+      <p class="hero-proof"><strong>{{COUNT}}</strong> contributor profiles <span aria-hidden="true">·</span> 7 simple steps <span aria-hidden="true">·</span> Free &amp; open source</p>
+    </div>
+    <div class="terminal-preview" aria-label="A preview of your first contribution">
+      <div class="terminal-bar"><span class="terminal-dots" aria-hidden="true">● ● ●</span><span>your-first-contribution</span><span aria-hidden="true">⌘</span></div>
+      <div class="terminal-content"><p class="terminal-comment"># Big things start with a small commit.</p><p><span class="terminal-prompt">$</span> git checkout -b my-first-pr</p><p><span class="terminal-prompt">$</span> git add src/profiles/you.md</p><p><span class="terminal-prompt">$</span> git commit -m "Hello, open source"</p><p class="terminal-success">✓ Your journey starts here.</p></div>
+      <div class="terminal-footer"><span class="branch-icon" aria-hidden="true">⑂</span> my-first-pr <span>one file. one new contributor.</span></div>
     </div>
   </section>
 
-  <h2 class="section-label">The seven steps</h2>
-  <ol class="step-list">
-{{STEPS}}
-  </ol>
+  <section class="prerequisites" id="before-you-start" aria-labelledby="prerequisites-heading">
+    <div><p class="eyebrow">Before you begin</p><h2 id="prerequisites-heading">A few things to have ready.</h2><p>No coding experience needed. Allow about 15 minutes, plus setup time.</p></div>
+    <ul><li><a href="https://github.com/signup">A free GitHub account <span aria-hidden="true">↗</span></a></li><li><a href="https://git-scm.com/downloads">Git installed on your computer <span aria-hidden="true">↗</span></a></li><li>A text editor and a terminal</li></ul>
+    <details class="setup-note"><summary>First time using Git on this computer?</summary><p>Set the name and email attached to your commits. Use the verified email or private noreply address shown in <a href="https://github.com/settings/emails">GitHub email settings</a>.</p><pre><code>git config --global user.name "Your Name"
+git config --global user.email "YOUR-VERIFIED-OR-NOREPLY-EMAIL"</code></pre><p>These commands change your default identity for future commits on this computer. To sign in when pushing, use <a href="https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git">Git Credential Manager or GitHub CLI</a>.</p></details>
+  </section>
 
-  <div class="callout">
-    <h2>Stuck on a command?</h2>
-    <p>Every git command used above is explained in the <a href="/cheatsheet/">cheatsheet</a>, with what it does and when you need it.</p>
+  <div class="guide-layout">
+    <aside class="guide-nav"><p class="eyebrow">Your first pull request</p><h2>One step at a time.</h2><nav aria-label="Tutorial steps"><ol>{{STEP_LINKS}}</ol></nav><a class="guide-reference" href="/cheatsheet/">Keep the Git cheatsheet handy ↗</a></aside>
+    <section aria-labelledby="steps-heading"><h2 class="section-label" id="steps-heading">How to make a GitHub pull request</h2><ol class="step-list">{{STEPS}}</ol></section>
   </div>
+
+  <section class="faq-section" aria-labelledby="faq-heading"><div><p class="eyebrow">Good questions</p><h2 id="faq-heading">A little clarity<br> before your first commit.</h2></div><div class="faq-list">{{FAQS}}</div></section>
+  <div class="callout"><h2>Learning works better together.</h2><p>Get to know the <a href="/submissions/">contributors</a>, revisit the <a href="/cheatsheet/">Git command cheatsheet</a>, or <a href="https://github.com/rishabh-bansal/GitStart/issues">report an unclear instruction</a> so the next person has a smoother start.</p></div>
 </main>

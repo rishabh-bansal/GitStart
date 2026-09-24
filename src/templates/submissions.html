@@ -2,13 +2,14 @@
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <ol>
       <li><a href="/">Tutorial</a></li>
-      <li aria-current="page">/ Submissions</li>
+      <li aria-current="page">/ Contributors</li>
     </ol>
   </nav>
   <div class="page-head">
     <h1>Contributors</h1>
-    <p>{{COUNT}} people have finished the tutorial and opened a pull request here. Finish yours and your avatar lands on this wall.</p>
+    <p>{{COUNT}} contributor profiles, each a small step into open source. Add your own profile with the tutorial and join them here.</p>
   </div>
+  <div class="contributor-filter" id="contributor-filter" hidden><label for="contributor-search">Find a contributor</label><input type="search" id="contributor-search" placeholder="Search name or GitHub username" autocomplete="off" /><p id="search-status" role="status" aria-live="polite">{{COUNT}} contributors</p></div>
   <ul class="people-grid">
 {{PEOPLE}}
   </ul>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{LANG}}" data-theme="dark">
+<html lang="{{LANG}}" data-theme="light">
 <head>
 {{HEAD}}
 <link rel="stylesheet" href="/styles.css" />
@@ -8,18 +8,18 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#0c0d10" />
-<script>(function(){try{var t=localStorage.getItem("gitstart-theme");if(!t)t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme="dark";}})();</script>
+<script>(function(){try{var t=localStorage.getItem("gitstart-theme");if(t!=="dark"&&t!=="light")t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme="light";}})();</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/"><span class="brand-dot" aria-hidden="true"></span>GitStart</a>
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">g<span>↗</span></span>GitStart</a>
     <nav class="nav" aria-label="Main">
-      <a class="nav-link{{ACTIVE_TUTORIAL}}" href="/"{{CUR_TUTORIAL}}>Tutorial</a>
-      <a class="nav-link{{ACTIVE_SUBMISSIONS}}" href="/submissions/"{{CUR_SUBMISSIONS}}>Submissions</a>
+      <a class="nav-link{{ACTIVE_TUTORIAL}}" href="/"{{CUR_TUTORIAL}}>The guide</a>
+      <a class="nav-link{{ACTIVE_SUBMISSIONS}}" href="/submissions/"{{CUR_SUBMISSIONS}}>Contributors</a>
       <a class="nav-link{{ACTIVE_CHEATSHEET}}" href="/cheatsheet/"{{CUR_CHEATSHEET}}>Cheatsheet</a>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme">
+      <button class="theme-toggle" id="theme-toggle" type="button" hidden aria-label="Switch to light theme">
         <span class="icon-light" aria-hidden="true">&#9790;</span><span class="icon-dark" aria-hidden="true">&#9728;</span>
       </button>
     </nav>
@@ -29,9 +29,9 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>GitStart &mdash; an open-source first-pull-request tutorial. MIT licensed.</span>
-    <span><a href="{{REPO}}">Source on GitHub</a> &middot; static HTML, no trackers</span>
+    <span><a href="{{REPO}}">Source on GitHub ↗</a> &middot; Made for your first step</span>
   </div>
 </footer>
-<script>(function(){var b=document.getElementById("theme-toggle");if(!b)return;b.addEventListener("click",function(){var d=document.documentElement,n=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=n;b.setAttribute("aria-label",n==="dark"?"Switch to light theme":"Switch to dark theme");try{localStorage.setItem("gitstart-theme",n);}catch(e){}});})();</script>
+<script src="/site.js" defer></script>
 </body>
 </html>

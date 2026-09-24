@@ -78,3 +78,18 @@ test('requested changes block merges until that reviewer approves or the review 
 test('API authorization failures cannot become successful check results', async () => {
   await assert.rejects(passedChecks(pr, async () => { throw new Error('HTTP 403'); }), /HTTP 403/);
 });
+
+test('fork PR discovery falls back to its exact source branch when GitHub omits commit associations', async () => {
+  const { candidatesForRun } = require('../scripts/automation-prs.js');
+  const sha = 'a'.repeat(40);
+  const run = {event:'pull_request',conclusion:'success',head_sha:sha,head_repository:{full_name:'octocat/GitStart'},head_branch:'add-me'};
+  const matching = {number:1,head:{sha,repo:{full_name:'octocat/GitStart'}}};
+  const calls = [];
+  const found = await candidatesForRun(run, async endpoint => {
+    calls.push(endpoint);
+    return calls.length === 1 ? [] : [matching,{number:2,head:{sha:'b'.repeat(40),repo:{full_name:'octocat/GitStart'}}}];
+  });
+  assert.deepEqual(found,[matching]);
+  assert.ok(calls[1].includes('head=octocat%3Aadd-me'));
+  assert.deepEqual(await candidatesForRun({...run,conclusion:'failure'},()=>{throw new Error('must not query');}),[]);
+});

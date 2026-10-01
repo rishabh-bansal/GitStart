@@ -1,0 +1,13 @@
+Hi my name is Mayank
+Languages I know
+C++
+Python 2.7
+Java
+Java Script
+C
+
+Skills I am good at
+
+Machine Learning
+Web Development
+Data Structures and Algorithms

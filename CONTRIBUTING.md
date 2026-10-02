@@ -23,6 +23,7 @@ this repository only:
 git config user.name "Your Display Name"
 git config user.email "YOUR-COMMIT-EMAIL"
 ```
+- [Jack Sodeman](https://github.com/rageunleashed69)
 
 For HTTPS authentication, follow GitHub's
 [credential setup guide](https://docs.github.com/en/get-started/git-basics/caching-your-github-credentials-in-git).

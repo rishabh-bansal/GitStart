@@ -1,3 +1,0 @@
-##  Clayton Surfus
-
-Hello World!

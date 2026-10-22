@@ -1,0 +1,68 @@
+name: Validate and merge candidate
+
+on:
+  workflow_call:
+    inputs:
+      pull_request:
+        required: true
+        type: number
+
+permissions: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: read
+      actions: read
+      checks: read
+      statuses: read
+    outputs:
+      eligible: ${{ steps.policy.outputs.eligible }}
+      head: ${{ steps.policy.outputs.head }}
+      base: ${{ steps.policy.outputs.base }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 'lts/*'
+          package-manager-cache: false
+      - id: policy
+        name: Validate trusted policy and current PR data
+        run: node scripts/automation-prs.js validate
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pull_request }}
+
+  merge:
+    needs: validate
+    if: needs.validate.outputs.eligible == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: read
+      checks: read
+      statuses: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.validate.outputs.base }}
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 'lts/*'
+          package-manager-cache: false
+      - name: Recheck state and squash the validated head
+        run: node scripts/automation-prs.js merge
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ inputs.pull_request }}
+          EXPECTED_HEAD: ${{ needs.validate.outputs.head }}
+          EXPECTED_BASE: ${{ needs.validate.outputs.base }}

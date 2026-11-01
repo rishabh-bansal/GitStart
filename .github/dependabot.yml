@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+      time: '06:00'
+      timezone: Etc/UTC
+    open-pull-requests-limit: 5
+    groups:
+      action-patch-and-minor:
+        update-types:
+          - patch
+          - minor
+    commit-message:
+      prefix: 'chore(actions)'

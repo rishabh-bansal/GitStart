@@ -1,4 +1,4 @@
 ---
-user name: sakshijainn
-full name: sakshi jain
+username: sakshijainn
+fullname: Sakshi Jain
 ---

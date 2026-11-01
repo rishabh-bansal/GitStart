@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}" data-theme="light">
+<head>
+{{HEAD}}
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#0c0d10" />
+<script>(function(){try{var t=localStorage.getItem("gitstart-theme");if(t!=="dark"&&t!=="light")t=window.matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme="light";}})();</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">g<span>↗</span></span>GitStart</a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-link{{ACTIVE_TUTORIAL}}" href="/"{{CUR_TUTORIAL}}>The guide</a>
+      <a class="nav-link{{ACTIVE_SUBMISSIONS}}" href="/submissions/"{{CUR_SUBMISSIONS}}>Contributors</a>
+      <a class="nav-link{{ACTIVE_CHEATSHEET}}" href="/cheatsheet/"{{CUR_CHEATSHEET}}>Cheatsheet</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" hidden aria-label="Switch to light theme">
+        <span class="icon-light" aria-hidden="true">&#9790;</span><span class="icon-dark" aria-hidden="true">&#9728;</span>
+      </button>
+    </nav>
+  </div>
+</header>
+{{MAIN}}
+<footer class="site-footer">
+  <div class="wrap">
+    <span>GitStart &mdash; an open-source first-pull-request tutorial. MIT licensed.</span>
+    <span><a href="{{REPO}}">Source on GitHub ↗</a> &middot; Made for your first step</span>
+  </div>
+</footer>
+<script src="/site.js" defer></script>
+</body>
+</html>
